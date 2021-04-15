@@ -1,6 +1,34 @@
-.aboutMe {
-  background-color: bisque;
+.background {
+  height: 100vh;
   width: 100%;
-  min-height: 100vh;
+  padding: 70px 0px 70px 0px;
+}
+.aboutMeBox {
+  background-color: lightgray;
+  border-radius: 50px;
+  position: absolute;
+  right: 100px;
+  top: 150px;
   background-size: cover;
+  width: 620px;
+  padding: 10px;
+  margin: 0;
+}
+.aboutMeBox2 {
+  background-color: bisque;
+  border-radius: 50px;
+  position: absolute;
+  right: 105px;
+  top: 155px;
+  background-size: cover;
+  width: 620px;
+  padding: 10px;
+  margin: 0;
+}
+
+.image {
+  position: absolute;
+  border-radius: 100px;
+  left: 100px;
+  top: 125px;
 }
