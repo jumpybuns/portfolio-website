@@ -10,7 +10,7 @@ const circleRadius2 = 100;
 
 export const Circles = () => {
   const [mousePosition, setMousePosition] = useState(intialMousePosition);
-
+  const [freezePosition, setFreezePosition] = useState(true);
   const handleMouseMove = useCallback(
     (event) => {
       const { clientX, clientY } = event;
@@ -19,13 +19,22 @@ export const Circles = () => {
     [setMousePosition]
   );
 
-  const handleOnClick = () => {
-    window.location.pathname = '/aboutme';
+  const freezeMouse = () => {
+    handleMouseMove({
+      cx: 100,
+      cy: 100,
+      r: 100,
+    });
   };
+  const handleOnClick = (event) => {
+    event.preventDefault();
+    freezeMouse();
+  };
+
   return (
     <>
-      <div onClick={handleOnClick}>
-        <svg width={width} height={height} onMouseMove={handleMouseMove}>
+      <div onMouseMove={handleMouseMove} className={styles.container}>
+        <svg width={width} height={height} onClick={handleOnClick}>
           <circle
             cx={mousePosition.x}
             cy={mousePosition.y}

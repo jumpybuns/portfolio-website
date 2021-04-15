@@ -4,12 +4,12 @@ import Name from './Name';
 import { Circles } from './Circles';
 
 export default function Home() {
-  const handleOnClick = () => {
-    window.location.pathname = '/aboutme';
-  };
+  // const handleOnClick = () => {
+  //   window.location.pathname = '/aboutme';
+  // };
   return (
     <>
-      <div onClick={handleOnClick}>
+      <div>
         <div className={styles.home}></div>
         <Name />
         <Circles />
