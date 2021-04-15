@@ -1,0 +1,13 @@
+svg {
+  cursor: none;
+}
+
+circle {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.lastCircle {
+  fill: burlywood;
+}

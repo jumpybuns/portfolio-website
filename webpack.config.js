@@ -78,11 +78,23 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpeg|jpg|png|svg)$/,
+        test: /\.(jpeg|jpg|png|svg|mp4)$/,
         use: {
           loader: 'url-loader',
-          options: { limit: 1000 },
+          options: { limit: 100000 },
         },
+      },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'video',
+            },
+          },
+        ],
       },
     ],
   },

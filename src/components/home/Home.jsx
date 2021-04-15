@@ -1,11 +1,19 @@
 import React from 'react';
 import styles from './Home.css';
+import Name from './Name';
+import { Circles } from './Circles';
 
 export default function Home() {
+  const handleOnClick = () => {
+    window.location.pathname = '/aboutme';
+  };
   return (
-    <div className={styles.home}>
-      <h1 className={styles.firstName}>Ethan</h1>
-      <h1 className={styles.lastName}>Pierce</h1>
-    </div>
+    <>
+      <div onClick={handleOnClick}>
+        <div className={styles.home}></div>
+        <Name />
+        <Circles />
+      </div>
+    </>
   );
 }

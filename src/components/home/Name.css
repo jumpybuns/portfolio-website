@@ -1,0 +1,26 @@
+body {
+  font-family: 'Squada One', cursive;
+  font-size: 25px;
+  letter-spacing: 100px;
+  word-spacing: -0.8px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+.firstName {
+  position: absolute;
+  right: 300px;
+  top: 150px;
+  font-size: 14rem;
+}
+
+.lastName {
+  position: absolute;
+  right: 350px;
+  top: 450px;
+  font-size: 14rem;
+}
