@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Circles.css';
 
 const width = 1920;
@@ -10,7 +9,6 @@ const circleRadius2 = 100;
 
 export const Circles = () => {
   const [mousePosition, setMousePosition] = useState(intialMousePosition);
-  const [freezePosition, setFreezePosition] = useState(true);
   const handleMouseMove = useCallback(
     (event) => {
       const { clientX, clientY } = event;
@@ -19,22 +17,10 @@ export const Circles = () => {
     [setMousePosition]
   );
 
-  const freezeMouse = () => {
-    handleMouseMove({
-      cx: 100,
-      cy: 100,
-      r: 100,
-    });
-  };
-  const handleOnClick = (event) => {
-    event.preventDefault();
-    freezeMouse();
-  };
-
   return (
     <>
-      <div onMouseMove={handleMouseMove} className={styles.container}>
-        <svg width={width} height={height} onClick={handleOnClick}>
+      <div className={styles.container}>
+        <svg width={width} height={height} onMouseMove={handleMouseMove}>
           <circle
             cx={mousePosition.x}
             cy={mousePosition.y}
