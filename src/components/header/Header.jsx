@@ -11,10 +11,12 @@ export default function Header() {
       <Link to="/techstack">
         <h1 className={styles.tsNav}>Tech Stack</h1>
       </Link>
-      <Link to="/Contact">
+      <Link to="/Projects">
         <h1 className={styles.projNav}>Projects</h1>
       </Link>
-      <h1 className={styles.contNav}>Contact</h1>
+      <Link to="/Contact">
+        <h1 className={styles.contNav}>Contact</h1>
+      </Link>
     </div>
   );
 }
