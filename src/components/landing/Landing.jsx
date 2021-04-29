@@ -3,7 +3,7 @@ import styles from './Landing.css';
 import Name from './Name';
 import { Circles } from './Circles';
 
-export default function Landing() {
+export const Landing = () => {
   const handleOnClick = () => {
     window.location.pathname = '/aboutme';
   };
@@ -16,4 +16,4 @@ export default function Landing() {
       </div>
     </>
   );
-}
+};

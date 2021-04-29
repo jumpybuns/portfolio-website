@@ -4,15 +4,14 @@ import Header from '../header/Header';
 import Triangle from './Triangle';
 import ethan from '../../../public/ethan.jpg';
 
-export default function AboutMe() {
+export const AboutMe = () => {
   return (
     <>
       <Header />
       <Triangle />
       <h1 className={styles.aboutMe}>ABOUT ME</h1>
       <div className={styles.background}>
-        <h3 className={styles.aboutMeBox}>
-        </h3>
+        <h3 className={styles.aboutMeBox}></h3>
         <h3 className={styles.aboutMeBox2}>
           I am focused and have a unique perspective with a passion for
           creativity, fixing bugs, problem solving and I love discussing new
@@ -31,4 +30,4 @@ export default function AboutMe() {
       </div>
     </>
   );
-}
+};

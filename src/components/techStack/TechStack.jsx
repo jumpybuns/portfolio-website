@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../header/Header';
 import styles from './TechStack.css';
 
-export default function TechStack() {
+export const TechStack = () => {
   return (
     <>
       <Header />
@@ -27,4 +27,4 @@ export default function TechStack() {
       </div>
     </>
   );
-}
+};
