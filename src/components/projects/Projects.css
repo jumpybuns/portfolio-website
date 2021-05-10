@@ -1,0 +1,27 @@
+.column1 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  padding: 100px;
+}
+.column2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 200px;
+  padding: 100px;
+}
+.column3 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 400px;
+  padding: 100px;
+}
+.column4 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 600px;
+  padding: 100px;
+}
