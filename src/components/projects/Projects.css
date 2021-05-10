@@ -25,3 +25,219 @@
   left: 600px;
   padding: 100px;
 }
+
+.button {
+  color: rgb(241, 241, 234);
+  transition: all 0.3s;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.button span {
+  transition: all 0.3s;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.button:hover span {
+  letter-spacing: 2px;
+}
+.button:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.button:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+.github {
+  color: rgb(241, 241, 234);
+  transition: all 0.3s;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.github span {
+  transition: all 0.3s;
+}
+.github::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 9%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.github:hover span {
+  letter-spacing: 2px;
+}
+.github:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.github::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 9%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.github:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+.email {
+  color: rgb(241, 241, 234);
+  transition: all 0.3s;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.email span {
+  transition: all 0.3s;
+}
+.email::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.email:hover span {
+  letter-spacing: 2px;
+}
+.email:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.email::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.email:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+.linkedin {
+  color: rgb(241, 241, 234);
+  transition: all 0.3s;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.linkedin span {
+  transition: all 0.3s;
+}
+.linkedin::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.linkedin:hover span {
+  letter-spacing: 2px;
+}
+.linkedin:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.linkedin::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.linkedin:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+.contact {
+  font-size: 5rem;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
