@@ -14,7 +14,9 @@ export const Projects = () => {
   return (
     <div>
       <Header />
-      <img src={selected} alt="project" width="200px" />
+      <div className={styles.container}>
+        <img src={selected} alt="project" />
+      </div>
       <h3 className={styles.aurora} onClick={() => setSelected(images.aurora)}>
         Aurora Synth
       </h3>
