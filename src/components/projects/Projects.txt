@@ -1,0 +1,98 @@
+import React, { Component } from 'react'
+import styles from './Projects.css';
+import { Link } from 'react-router-dom';
+import aurora from '../../../public/aurora.jpg';
+import karaoke from '../../../public/karaoke.jpg';
+import chatable from '../../../public/chatable.jpg';
+import bloom from '../../../public/bloom.jpg';
+import Header from '../header/Header';
+import { Aurora } from './Aurora';
+import { Bloom } from './Bloom';
+import { render } from 'react-dom';
+
+export default class Projects extends Component {
+  constructor() {
+    super();
+    this.onClickForward = this.onClickForward.bind(this)
+    this.onClickBack = this.onClickBack.bind(this)
+    
+    const aurora = require('../../../public/aurora.jpg')
+    const karaoke = require('../../../public/karaoke.jpg')
+    const chatable = require('../../../public/chatable.jpg')
+    const bloom = require('../../../public/bloom.jpg')
+  
+    this.state = {
+      index: 0,
+      imgList: [aurora, karaoke, chatable, bloom]
+    }
+  
+  
+  onClickForward() {
+    if (this.state.index + 1 === this.state.imgList.length) {
+      this.setState({
+        index: 0
+      })
+    } else {
+      this.setState({
+        index: this.state.index + 1
+      })
+    }
+  };
+  
+  onClickBack() {
+    if (this.state.index - 1 === 1) {
+      this.setState({
+        index: this.state.imgList.length -1
+      })
+    } else {
+      this.setState({
+        index: this.state.index -1
+      })
+    }
+  }
+
+}
+
+
+
+  render() {
+    return (
+      <div>
+      <Header />
+      <img src={this.state.imgList[this.state.index]} alt=""/>
+      <button onClick={this.state.onClickBack}>back</button>
+      <button onClick={this.state.onClickForward}>forward</button>
+      
+      <h1 className={styles.contact}>Contact</h1>
+      <a className={styles.button} download="Ethan Pierce Resume">
+        Aurora Synth
+      </a>
+      <Link
+        to={{ pathname: 'https://github.com/jumpybuns' }}
+        target="_blank"
+        style={{ textDecoration: 'none' }}
+      >
+        <h3 className={styles.github}>Karaoke Roulette</h3>
+      </Link>
+      <Link
+        to={{ pathname: 'https://mail.google.com/' }}
+        target="_blank"
+        style={{ textDecoration: 'none' }}
+      >
+        <h3 className={styles.email}>Chatable</h3>
+      </Link>
+      <Link
+        to={{ pathname: 'https://www.linkedin.com/in/ethanpiercepresents' }}
+        target="_blank"
+        style={{ textDecoration: 'none' }}
+      >
+        <h3 className={styles.linkedin}>Bloom Financial</h3>
+      </Link>
+        
+      </div>
+    )
+  }
+}
+
+
+

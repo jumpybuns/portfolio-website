@@ -1,41 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import aurora from './images/aurora.jpg';
+import karaoke from './images/karaoke.jpg';
+import chatable from './images/chatable.jpg';
+import bloom from './images/bloom.jpg';
 import styles from './Projects.css';
-import { Link } from 'react-router-dom';
-import aurora from '../../../public/aurora.jpg';
-import karaoke from '../../../public/karaoke.jpg';
-import chatable from '../../../public/chatable.jpg';
-import bloom from '../../../public/bloom.jpg';
 import Header from '../header/Header';
 
+const images = { aurora, karaoke, chatable, bloom };
+
 export const Projects = () => {
+  const [selected, setSelected] = useState(images.aurora);
+
   return (
     <div>
       <Header />
-      <h1 className={styles.contact}>Contact</h1>
-      <a className={styles.button} download="Ethan Pierce Resume">
+      <img src={selected} alt="project" width="200px" />
+      <h3 className={styles.aurora} onClick={() => setSelected(images.aurora)}>
         Aurora Synth
-      </a>
-      <Link
-        to={{ pathname: 'https://github.com/jumpybuns' }}
-        target="_blank"
-        style={{ textDecoration: 'none' }}
+      </h3>
+      <h3
+        className={styles.karaoke}
+        onClick={() => setSelected(images.karaoke)}
       >
-        <h3 className={styles.github}>Karaoke Roulette</h3>
-      </Link>
-      <Link
-        to={{ pathname: 'https://mail.google.com/' }}
-        target="_blank"
-        style={{ textDecoration: 'none' }}
+        Karaoke Roulette
+      </h3>
+      <h3
+        className={styles.chatable}
+        onClick={() => setSelected(images.chatable)}
       >
-        <h3 className={styles.email}>Chatable</h3>
-      </Link>
-      <Link
-        to={{ pathname: 'https://www.linkedin.com/in/ethanpiercepresents' }}
-        target="_blank"
-        style={{ textDecoration: 'none' }}
-      >
-        <h3 className={styles.linkedin}>Bloom Financial</h3>
-      </Link>
+        Chatable
+      </h3>
+      <h3 className={styles.bloom} onClick={() => setSelected(images.bloom)}>
+        Bloom Financial
+      </h3>
     </div>
   );
 };
