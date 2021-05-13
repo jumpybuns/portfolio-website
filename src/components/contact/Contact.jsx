@@ -39,7 +39,6 @@ export const Contact = () => {
         >
           <h3 className={styles.linkedin}>LinkedIn</h3>
         </Link>
-        <Line />
       </div>
     </>
   );

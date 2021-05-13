@@ -1,9 +1,5 @@
 .projectImages {
-  height: auto;
   width: 400px;
-  position: absolute;
-  left: 650px;
-  top: 220px;
 }
 .projectText {
   font-size: 3rem;
@@ -16,7 +12,7 @@
   font-size: 3rem;
   position: absolute;
   left: 650px;
-  top: 120px;
+  top: 220px;
 }
 
 .aurora {
@@ -24,7 +20,7 @@
   transition: all 0.3s;
   position: relative;
   left: 100px;
-  top: 100px;
+  top: 50px;
   text-decoration: none;
   font-size: 3rem;
 }
@@ -76,7 +72,7 @@
   transition: all 0.3s;
   position: relative;
   left: 100px;
-  top: 100px;
+  top: 50px;
   text-decoration: none;
   font-size: 3rem;
 }
@@ -128,7 +124,7 @@
   transition: all 0.3s;
   position: relative;
   left: 100px;
-  top: 100px;
+  top: 50px;
   text-decoration: none;
   font-size: 3rem;
 }
@@ -181,7 +177,7 @@
   transition: all 0.3s;
   position: relative;
   left: 100px;
-  top: 100px;
+  top: 50px;
   text-decoration: none;
   font-size: 3rem;
 }

@@ -7,29 +7,24 @@ export default function Header() {
     <>
       <div className={styles.header}>
         <ul className={styles.headerList}>
-          <li>
+          <li className={styles.aboutme}>
             <Link smooth to={'/aboutme#aboutme'}>
               About Me
             </Link>
           </li>
-          <li>
+          <li className={styles.techstack}>
             <Link smooth to={'/techstack#techstack'}>
               Tech Stack
             </Link>
           </li>
-          <li>
+          <li className={styles.projects}>
             <Link smooth to={'/projects#projects'}>
               Projects
             </Link>
           </li>
-          <li>
+          <li className={styles.contact} style={{ textDecoration: 'none' }}>
             <Link smooth to={'/contact#contact'}>
               Contact
-            </Link>
-          </li>
-          <li className={styles.backToTop}>
-            <Link smooth to="#top">
-              Top of Page
             </Link>
           </li>
         </ul>
