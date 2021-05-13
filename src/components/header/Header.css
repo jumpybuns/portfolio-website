@@ -20,7 +20,7 @@
 
 .aboutme:hover {
   background-color: black;
-  transform: translate(-10%, 0%);
+  transform: translate(0%, 0%);
 }
 
 .aboutme a {
@@ -38,7 +38,7 @@
 
 .techstack:hover {
   background-color: black;
-  transform: translate(-10%, 0%);
+  transform: translate(0%, 0%);
 }
 
 .techstack a {
@@ -57,7 +57,7 @@
 
 .projects:hover {
   background-color: black;
-  transform: translate(-10%, 0%);
+  transform: translate(0%, 0%);
 }
 
 .projects a {
@@ -75,7 +75,7 @@
 
 .contact:hover {
   background-color: black;
-  transform: translate(-10%, 0%);
+  transform: translate(0%, 0%);
 }
 
 .contact a {
