@@ -1,18 +1,11 @@
-.container {
-  width: inherit;
-}
-
 .projectImages {
-  max-width: 100%;
   height: auto;
   width: 400px;
-  border-radius: 10px;
   position: absolute;
-  left: 500px;
-  top: 200px;
+  left: 650px;
+  top: 220px;
 }
 .projectText {
-  max-width: 100%;
   font-size: 3rem;
   position: absolute;
   left: 650px;
@@ -20,7 +13,6 @@
 }
 
 .projectTitles {
-  max-width: 100%;
   font-size: 3rem;
   position: absolute;
   left: 650px;
@@ -235,11 +227,4 @@
 .bloom:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
-}
-
-.contact {
-  font-size: 5rem;
-  position: absolute;
-  right: 200px;
-  top: 200px;
 }

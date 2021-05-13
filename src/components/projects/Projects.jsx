@@ -26,53 +26,55 @@ export const Projects = () => {
   const [selectedTitle, setSelectedTitle] = useState(title.auroraTitle);
 
   return (
-    <div>
+    <>
       <Header />
-      <div className={styles.container}>
-        <h1 className={styles.projectTitles}>{selectedTitle}</h1>
-        <img className={styles.projectImages} src={selected} alt="project" />
-        <p className={styles.projectText}>{selectedText}</p>
+      <div id="projects">
+        <div className={styles.container}>
+          <h1 className={styles.projectTitles}>{selectedTitle}</h1>
+          <img className={styles.projectImages} src={selected} alt="project" />
+          <p className={styles.projectText}>{selectedText}</p>
+        </div>
+        <h3
+          className={styles.aurora}
+          onClick={() => {
+            setSelected(images.aurora);
+            setSelectedText(text.auroraText);
+            setSelectedTitle(title.auroraTitle);
+          }}
+        >
+          Aurora Synth
+        </h3>
+        <h3
+          className={styles.karaoke}
+          onClick={() => {
+            setSelected(images.karaoke);
+            setSelectedText(text.karaokeText);
+            setSelectedTitle(title.karaokeTitle);
+          }}
+        >
+          Karaoke Roulette
+        </h3>
+        <h3
+          className={styles.chatable}
+          onClick={() => {
+            setSelected(images.chatable);
+            setSelectedText(text.chatableText);
+            setSelectedTitle(title.chatableTitle);
+          }}
+        >
+          Chatable
+        </h3>
+        <h3
+          className={styles.bloom}
+          onClick={() => {
+            setSelected(images.bloom);
+            setSelectedText(text.bloomText);
+            setSelectedTitle(title.bloomTitle);
+          }}
+        >
+          Bloom Financial
+        </h3>
       </div>
-      <h3
-        className={styles.aurora}
-        onClick={() => {
-          setSelected(images.aurora);
-          setSelectedText(text.auroraText);
-          setSelectedTitle(title.auroraTitle);
-        }}
-      >
-        Aurora Synth
-      </h3>
-      <h3
-        className={styles.karaoke}
-        onClick={() => {
-          setSelected(images.karaoke);
-          setSelectedText(text.karaokeText);
-          setSelectedTitle(title.karaokeTitle);
-        }}
-      >
-        Karaoke Roulette
-      </h3>
-      <h3
-        className={styles.chatable}
-        onClick={() => {
-          setSelected(images.chatable);
-          setSelectedText(text.chatableText);
-          setSelectedTitle(title.chatableTitle);
-        }}
-      >
-        Chatable
-      </h3>
-      <h3
-        className={styles.bloom}
-        onClick={() => {
-          setSelected(images.bloom);
-          setSelectedText(text.bloomText);
-          setSelectedTitle(title.bloomTitle);
-        }}
-      >
-        Bloom Financial
-      </h3>
-    </div>
+    </>
   );
 };

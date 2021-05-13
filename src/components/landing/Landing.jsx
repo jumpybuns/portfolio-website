@@ -5,14 +5,16 @@ import { Circles } from './Circles';
 
 export const Landing = () => {
   const handleOnClick = () => {
-    window.location.pathname = '/aboutme';
+    window.location.pathname = '/home';
   };
   return (
     <>
-      <div onClick={handleOnClick}>
-        <div className={styles.landing}></div>
-        <Name />
-        <Circles />
+      <div id="landing">
+        <div onClick={handleOnClick}>
+          <div className={styles.landing}></div>
+          <Name />
+          <Circles />
+        </div>
       </div>
     </>
   );
