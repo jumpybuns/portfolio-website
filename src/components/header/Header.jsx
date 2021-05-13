@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavHashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from './Header.css';
 
 export default function Header() {
@@ -8,38 +8,22 @@ export default function Header() {
       <div className={styles.header}>
         <ul className={styles.headerList}>
           <li>
-            <Link
-              smooth
-              activeStyle={{ fontWeight: 'bold' }}
-              to={'/contact#contact'}
-            >
+            <Link smooth to={'/aboutme#aboutme'}>
               About Me
             </Link>
           </li>
           <li>
-            <Link
-              smooth
-              activeStyle={{ fontWeight: 'bold' }}
-              to={'/techstack#techstack'}
-            >
+            <Link smooth to={'/techstack#techstack'}>
               Tech Stack
             </Link>
           </li>
           <li>
-            <Link
-              smooth
-              activeStyle={{ fontWeight: 'bold' }}
-              to={'/projects#projects'}
-            >
+            <Link smooth to={'/projects#projects'}>
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              smooth
-              activeStyle={{ fontWeight: 'bold' }}
-              to={'/contact#contact'}
-            >
+            <Link smooth to={'/contact#contact'}>
               Contact
             </Link>
           </li>
