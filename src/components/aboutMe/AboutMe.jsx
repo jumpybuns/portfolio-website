@@ -7,28 +7,33 @@ import ethan from '../../../public/ethan.jpg';
 export const AboutMe = () => {
   return (
     <>
-      {' '}
       <Header />
-      <div id="aboutme">
-        <Triangle />
-        <h1 className={styles.aboutMe}>ABOUT ME</h1>
-        <div className={styles.background}>
-          <h3 className={styles.aboutMeBox}></h3>
-          <h3 className={styles.aboutMeBox2}>
-            I am focused and have a unique perspective with a passion for
-            creativity, fixing bugs, problem solving and I love discussing new
-            concepts and ideas. I am a fun, friendly and patient person who can
-            keep cool in stressful situations and is able to relate and
-            communicate well with clients and coworkers alike.
-          </h3>
-
-          <img
-            className={styles.image}
-            alt="ethan"
-            src={ethan}
-            height="200px"
-            width="200px"
-          />
+      <div className={styles.container1}>
+        <div className={styles.row1}>
+          <div id="aboutme">
+            <img
+              className={styles.image}
+              alt="ethan"
+              src={ethan}
+              height="200px"
+              width="200px"
+            />{' '}
+          </div>
+        </div>
+      </div>
+      <div className={styles.container2}>
+        <div className={styles.row2}>
+          <h1 className={styles.aboutMe}>ABOUT ME</h1>
+          <div className={styles.background}>
+            <h3 className={styles.aboutMeBox}></h3>
+            <h3 className={styles.aboutMeBox2}>
+              I am focused and have a unique perspective with a passion for
+              creativity, fixing bugs, problem solving and I love discussing new
+              concepts and ideas. I am a fun, friendly and patient person who
+              can keep cool in stressful situations and is able to relate and
+              communicate well with clients and coworkers alike.
+            </h3>
+          </div>
         </div>
       </div>
     </>

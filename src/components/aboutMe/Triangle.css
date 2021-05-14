@@ -3,6 +3,7 @@
   stroke: black;
   stroke-width: 3px;
   animation: hideshow 4s ease infinite;
+  overflow: hidden;
 }
 @keyframes hideshow {
   0% {

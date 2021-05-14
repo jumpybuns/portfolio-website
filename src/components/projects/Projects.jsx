@@ -32,8 +32,8 @@ export const Projects = () => {
   return (
     <>
       <Header />
-      <div id="projects">
-        <div className={styles.container}>
+      <div className={styles.container} id="projects">
+        <div className={styles.box1}>
           <h1 className={styles.projectTitles}>{selectedTitle}</h1>
           <img className={styles.projectImages} src={selected} alt="project" />
           <p className={styles.projectText}>{selectedText}</p>

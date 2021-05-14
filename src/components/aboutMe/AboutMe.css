@@ -1,39 +1,60 @@
-.background {
-  padding: 70px 0px 70px 0px;
+.container1 {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.row1 {
+  width: 20%;
+  border: 1px solid blue;
+}
+
+.image {
+  justify-content: left;
+  border-radius: 100px;
+}
+
+.container2 {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.row2 {
+  width: 50%;
+  border: 1px solid blue;
 }
 .aboutMe {
-  position: absolute;
-  top: 600px;
-  right: 100px;
+  min-height: 100vh;
+  justify-content: right;
   font-size: 5rem;
 }
 .aboutMeBox {
   background-color: lightgray;
   border-radius: 50px;
-  position: absolute;
-  right: 100px;
-  top: 150px;
-  background-size: cover;
   width: 620px;
   height: 80px;
-  padding: 10px;
-  margin: 0;
 }
 .aboutMeBox2 {
   background-color: bisque;
   border-radius: 50px;
-  position: absolute;
-  right: 105px;
-  top: 155px;
+
   background-size: cover;
   width: 620px;
   padding: 10px;
   margin: 0;
-}
-
-.image {
-  position: absolute;
-  border-radius: 100px;
-  left: 100px;
-  top: 125px;
 }

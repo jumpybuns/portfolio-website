@@ -10,9 +10,12 @@
   border-bottom: 50px double #a23d27;
 }
 
+.container {
+  display: grid;
+}
+
 .aboutme {
-  position: relative;
-  left: 800px;
+  flex: 1;
   font-size: 1.5rem;
   list-style-type: none;
   transition-duration: 0.8s;
@@ -29,8 +32,8 @@
 }
 
 .techstack {
-  position: relative;
-  left: 900px;
+  flex: 1;
+
   font-size: 1.5rem;
   list-style-type: none;
   transition-duration: 0.8s;
@@ -47,8 +50,8 @@
 }
 
 .projects {
-  position: relative;
-  left: 1000px;
+  flex: 1;
+
   font-size: 1.5rem;
   list-style-type: none;
   color: whitesmoke;
@@ -66,8 +69,7 @@
 }
 
 .contact {
-  position: relative;
-  left: 1100px;
+  flex: 1;
   font-size: 1.5rem;
   list-style-type: none;
   transition-duration: 0.8s;
