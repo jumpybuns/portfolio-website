@@ -1,9 +1,13 @@
+.container {
+  position: absolute;
+}
+
 .polygon1 {
   fill: brown;
   stroke: black;
   stroke-width: 3px;
   animation: hideshow 4s ease infinite;
-  overflow: hidden;
+  top: -500px;
 }
 @keyframes hideshow {
   0% {

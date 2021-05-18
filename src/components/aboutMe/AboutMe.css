@@ -7,54 +7,32 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.row1 {
-  width: 20%;
-  border: 1px solid blue;
 }
 
 .image {
   justify-content: left;
-  border-radius: 100px;
+  border-radius: 100%;
+  margin-left: 33%;
+  margin-top: 20%;
 }
 
-.container2 {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: right;
-  justify-content: right;
-}
-
-.row2 {
-  width: 50%;
-  border: 1px solid blue;
-}
-.aboutMe {
-  min-height: 100vh;
-  justify-content: right;
-  font-size: 5rem;
-}
 .aboutMeBox {
-  background-color: lightgray;
-  border-radius: 50px;
-  width: 620px;
-  height: 80px;
-}
-.aboutMeBox2 {
   background-color: bisque;
   border-radius: 50px;
-
+  display: flex;
   background-size: cover;
-  width: 620px;
-  padding: 10px;
-  margin: 0;
+  box-sizing: border-box;
+  width: 53%;
+  flex: none;
+  margin-left: 45%;
+  margin-top: -15%;
+}
+
+.aboutMe {
+  font-size: 5rem;
+  border-top: 50px #1c6ea4;
+  display: flex;
+  flex: none;
+  margin-left: 65%;
+  margin-top: 5%;
 }
