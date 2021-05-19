@@ -5,18 +5,19 @@ import { LandingHeader } from './LandingHeader';
 import { Circles } from './Circles';
 
 export const Landing = () => {
+  const clicked = (e) => {};
+
   const handleOnClick = () => {
-    window.location.pathname = '/home';
+    window.location.pathname = '/';
   };
   return (
     <>
       <div id="landing">
-        <div className={styles.container}>
-          <div onClick={handleOnClick}>
+        <div className={styles.container} onClick={clicked}>
+          <div>
             <div className={styles.landing}></div>
             <LandingHeader />
             <Name />
-            <Circles />
           </div>
         </div>
       </div>

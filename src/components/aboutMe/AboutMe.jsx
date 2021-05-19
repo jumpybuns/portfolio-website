@@ -11,13 +11,7 @@ export const AboutMe = () => {
       <div id="aboutme">
         <div className={styles.container1}>
           <div className={styles.row1}>
-            <img
-              className={styles.image}
-              alt="ethan"
-              src={ethan}
-              height="300px"
-              width="300px"
-            />{' '}
+            <img className={styles.image} alt="ethan" src={ethan} />{' '}
           </div>
         </div>
         <div className={styles.container2}>

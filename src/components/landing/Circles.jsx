@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import styles from './Circles.css';
+import { Landing } from './Landing';
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -20,7 +21,7 @@ export const Circles = () => {
   return (
     <>
       <div className={styles.container}>
-        <svg width={width} height={height} onMouseMove={handleMouseMove}>
+        <svg width={width} height={height}>
           <circle
             cx={mousePosition.x}
             cy={mousePosition.y}

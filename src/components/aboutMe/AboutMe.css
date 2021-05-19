@@ -1,4 +1,5 @@
 .container1 {
+  background-color: blanchedalmond;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -11,21 +12,71 @@
 
 .image {
   justify-content: left;
-  border-radius: 100%;
-  margin-left: 33%;
-  margin-top: 20%;
+}
+
+.image {
+  -webkit-animation: image 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: image 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes image {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes image {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
 }
 
 .aboutMeBox {
-  background-color: bisque;
-  border-radius: 50px;
   display: flex;
   background-size: cover;
   box-sizing: border-box;
-  width: 53%;
+  font-size: 1.5rem;
+
+  width: 40%;
   flex: none;
-  margin-left: 45%;
-  margin-top: -15%;
+  margin: 0;
+  padding: 0;
+  margin-left: 55%;
+  margin-top: -35%;
+}
+.aboutMeBox {
+  -webkit-animation: aboutMeBox 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: aboutMeBox 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes aboutMeBox {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes aboutMeBox {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
 }
 
 .aboutMe {
