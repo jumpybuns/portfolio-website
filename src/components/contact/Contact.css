@@ -7,6 +7,13 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  color: lightgray;
+  flex: none;
+  margin-left: 10%;
+  margin-top: 1%;
+  font-size: 3rem;
+  width: 80%;
+  text-decoration: none;
 }
 
 .button {
@@ -19,16 +26,8 @@
   text-decoration: none;
 }
 
-h3 {
-  color: lightgray;
-  flex: none;
-  margin-left: 80%;
-  margin-top: 15%;
-  font-size: 3rem;
-  width: 80%;
-}
-
 .contact {
+  color: black;
   font-size: 5rem;
   flex: none;
   margin-left: 5%;

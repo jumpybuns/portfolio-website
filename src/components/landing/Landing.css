@@ -1,5 +1,7 @@
-  
+.container {
+  display: flex;
+  flex: row nowrap;
+}
+
 .landing {
-  background-image: url('../../../public/background.png');
-  background-color: cadetblue;
 }

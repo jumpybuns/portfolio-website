@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Landing.css';
 import Name from './Name';
+import { LandingHeader } from './LandingHeader';
 import { Circles } from './Circles';
 
 export const Landing = () => {
@@ -10,10 +11,13 @@ export const Landing = () => {
   return (
     <>
       <div id="landing">
-        <div onClick={handleOnClick}>
-          <div className={styles.landing}></div>
-          <Name />
-          <Circles />
+        <div className={styles.container}>
+          <div onClick={handleOnClick}>
+            <div className={styles.landing}></div>
+            <LandingHeader />
+            <Name />
+            <Circles />
+          </div>
         </div>
       </div>
     </>

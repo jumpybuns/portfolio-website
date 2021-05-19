@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import styles from './Circles.css';
 
-const width = 1920;
-const height = 1080;
+const width = window.innerWidth;
+const height = window.innerHeight;
 const circleRadius = 200;
 const intialMousePosition = { x: 0, y: 0 };
 const circleRadius2 = 100;
