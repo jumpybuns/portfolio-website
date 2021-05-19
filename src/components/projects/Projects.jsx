@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import upArrow from '../../../public/upArrow.png';
 import aurora from './images/aurora.jpg';
 import karaoke from './images/karaoke.jpg';
 import chatable from './images/chatable.jpg';
@@ -31,53 +33,64 @@ export const Projects = () => {
 
   return (
     <>
-      <Header />
-      <div className={styles.container} id="projects">
-        <div className={styles.box1}>
-          <h1 className={styles.projectTitles}>{selectedTitle}</h1>
-          <img className={styles.projectImages} src={selected} alt="project" />
-          <p className={styles.projectText}>{selectedText}</p>
+      <div id="top">
+        <Header />
+        <div id="projects">
+          <div className={styles.box1}>
+            <h1 className={styles.projectTitles}>{selectedTitle}</h1>
+            <img
+              className={styles.projectImages}
+              src={selected}
+              alt="project"
+            />
+            <p className={styles.projectText}>{selectedText}</p>
+          </div>
+          <h3
+            className={styles.aurora}
+            onClick={() => {
+              setSelected(images.aurora);
+              setSelectedText(text.auroraText);
+              setSelectedTitle(title.auroraTitle);
+            }}
+          >
+            Aurora Synth
+          </h3>
+          <h3
+            className={styles.karaoke}
+            onClick={() => {
+              setSelected(images.karaoke);
+              setSelectedText(text.karaokeText);
+              setSelectedTitle(title.karaokeTitle);
+            }}
+          >
+            Karaoke Roulette
+          </h3>
+          <h3
+            className={styles.chatable}
+            onClick={() => {
+              setSelected(images.chatable);
+              setSelectedText(text.chatableText);
+              setSelectedTitle(title.chatableTitle);
+            }}
+          >
+            Chatable
+          </h3>
+          <h3
+            className={styles.bloom}
+            onClick={() => {
+              setSelected(images.bloom);
+              setSelectedText(text.bloomText);
+              setSelectedTitle(title.bloomTitle);
+            }}
+          >
+            Bloom Financial
+          </h3>
         </div>
-        <h3
-          className={styles.aurora}
-          onClick={() => {
-            setSelected(images.aurora);
-            setSelectedText(text.auroraText);
-            setSelectedTitle(title.auroraTitle);
-          }}
-        >
-          Aurora Synth
-        </h3>
-        <h3
-          className={styles.karaoke}
-          onClick={() => {
-            setSelected(images.karaoke);
-            setSelectedText(text.karaokeText);
-            setSelectedTitle(title.karaokeTitle);
-          }}
-        >
-          Karaoke Roulette
-        </h3>
-        <h3
-          className={styles.chatable}
-          onClick={() => {
-            setSelected(images.chatable);
-            setSelectedText(text.chatableText);
-            setSelectedTitle(title.chatableTitle);
-          }}
-        >
-          Chatable
-        </h3>
-        <h3
-          className={styles.bloom}
-          onClick={() => {
-            setSelected(images.bloom);
-            setSelectedText(text.bloomText);
-            setSelectedTitle(title.bloomTitle);
-          }}
-        >
-          Bloom Financial
-        </h3>
+        <div className={styles.arrow}>
+          <Link smooth to={'/projects#top'}>
+            <img src={upArrow} alt="" width="20px" />
+          </Link>
+        </div>
       </div>
     </>
   );

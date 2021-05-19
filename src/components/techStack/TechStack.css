@@ -9,8 +9,6 @@
   height: 100vh;
   width: 100%;
   border-radius: 100px;
-
-  
 }
 
 .techStack {
@@ -20,9 +18,9 @@
 }
 
 h2 {
-  font-size: 3rem;
-  margin-top: 100px;
-  margin-left: 20px;
+  font-size: 2.5rem;
+  margin-top: 20%;
+  margin-left: 2%;
   border-bottom: 5px solid #1c6ea4;
   border-radius: 5px 0px 0px 40px;
   background-color: coral;
@@ -30,10 +28,17 @@ h2 {
 
 pre {
   font-weight: bolder;
-  font-size: 2rem;
-  margin-left: 100px;
-  margin-bottom: 50px;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  margin-bottom: 4%;
   border-bottom: 5px solid #1c6ea4;
   border-radius: 5px 0px 0px 40px;
   background-color: coral;
+}
+
+.arrow {
+  display: flex;
+  flex: none;
+  margin-top: -2%;
+  margin-left: 95%;
 }

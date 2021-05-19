@@ -213,3 +213,10 @@
   right: 200px;
   top: 400px;
 }
+
+.arrow {
+  display: flex;
+  flex: none;
+  margin-top: -2%;
+  margin-left: 95%;
+}

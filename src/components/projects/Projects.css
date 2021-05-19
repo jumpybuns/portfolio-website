@@ -228,3 +228,10 @@
   opacity: 0;
   transform: scale(0.1, 1);
 }
+
+.arrow {
+  display: flex;
+  flex: none;
+  margin-top: -2%;
+  margin-left: 95%;
+}
