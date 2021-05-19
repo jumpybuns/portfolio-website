@@ -10,10 +10,16 @@ export const LandingHeader = () => {
           <Link smooth to={'/projects#projects'}>
             Work
           </Link>
+          <Link smooth to={'/aboutme#aboutme'}>
+            Play
+          </Link>
+          <Link smooth to={'/techstack#techstack'}>
+            Tech
+          </Link>
+          <Link smooth to={'/contact#contact'}>
+            Contact
+          </Link>
         </div>
-        <div>Play</div>
-        <div>Tech</div>
-        <div>Contact</div>
       </div>
     </div>
   );

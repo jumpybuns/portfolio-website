@@ -19,48 +19,46 @@ export const Circles = () => {
   );
 
   return (
-    <>
-      <div className={styles.container}>
-        <svg width={width} height={height}>
-          <circle
-            cx={mousePosition.x}
-            cy={mousePosition.y}
-            r={circleRadius + circleRadius2}
-          />
-          <circle
-            cx={mousePosition.x / 4}
-            cy={mousePosition.y / 2}
-            r={circleRadius}
-          />
-          <circle
-            cx={mousePosition.x / 2}
-            cy={mousePosition.y / 4}
-            r={circleRadius}
-          />
-          <circle
-            cx={mousePosition.x * 2}
-            cy={mousePosition.y * 2}
-            r={circleRadius - circleRadius2}
-          />
-          <circle
-            cx={mousePosition.x * 0.1}
-            cy={mousePosition.y * 0.1}
-            r={circleRadius - circleRadius2}
-          />
+    <div className={styles.container}>
+      <svg width={width} height={height} onMouseMove={handleMouseMove}>
+        <circle
+          cx={mousePosition.x}
+          cy={mousePosition.y}
+          r={circleRadius + circleRadius2}
+        />
+        <circle
+          cx={mousePosition.x / 4}
+          cy={mousePosition.y / 2}
+          r={circleRadius}
+        />
+        <circle
+          cx={mousePosition.x / 2}
+          cy={mousePosition.y / 4}
+          r={circleRadius}
+        />
+        <circle
+          cx={mousePosition.x * 2}
+          cy={mousePosition.y * 2}
+          r={circleRadius - circleRadius2}
+        />
+        <circle
+          cx={mousePosition.x * 0.1}
+          cy={mousePosition.y * 0.1}
+          r={circleRadius - circleRadius2}
+        />
 
-          <circle
-            cx={mousePosition.x * 0.4}
-            cy={mousePosition.y * 0.4}
-            r={circleRadius - circleRadius2}
-          />
-          <circle
-            className={styles.lastCircle}
-            cx={mousePosition.x * 0.6}
-            cy={mousePosition.y * 0.6}
-            r={circleRadius - circleRadius2}
-          />
-        </svg>
-      </div>
-    </>
+        <circle
+          cx={mousePosition.x * 0.4}
+          cy={mousePosition.y * 0.4}
+          r={circleRadius - circleRadius2}
+        />
+        <circle
+          className={styles.lastCircle}
+          cx={mousePosition.x * 0.6}
+          cy={mousePosition.y * 0.6}
+          r={circleRadius - circleRadius2}
+        />
+      </svg>
+    </div>
   );
 };

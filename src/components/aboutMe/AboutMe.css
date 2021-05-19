@@ -15,8 +15,8 @@
 }
 
 .image {
-  -webkit-animation: image 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: image 2.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes image {
@@ -40,6 +40,24 @@
   }
 }
 
+.container2 {
+  display: flex;
+  background-size: cover;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  width: 45%;
+  flex: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 35%;
+  margin-top: -30%;
+}
+.container2 {
+  -webkit-animation: container2 0.95s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: container2 0.95s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
 .aboutMeBox {
   display: flex;
   background-size: cover;
@@ -54,31 +72,56 @@
   margin-top: -35%;
 }
 .aboutMeBox {
-  -webkit-animation: aboutMeBox 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: aboutMeBox 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: aboutMeBox 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: aboutMeBox 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes container2 {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes container2 {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
 }
 
 @-webkit-keyframes aboutMeBox {
-  100% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
   0% {
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 @keyframes aboutMeBox {
-  100% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
   0% {
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
   }
 }
-
 .aboutMe {
   font-size: 5rem;
   border-top: 50px #1c6ea4;

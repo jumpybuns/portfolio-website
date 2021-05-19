@@ -14,11 +14,9 @@ export const Landing = () => {
     <>
       <div id="landing">
         <div className={styles.container} onClick={clicked}>
-          <div>
-            <div className={styles.landing}></div>
-            <LandingHeader />
-            <Name />
-          </div>
+          <Name />
+          <LandingHeader />
+          <Circles />
         </div>
       </div>
     </>
