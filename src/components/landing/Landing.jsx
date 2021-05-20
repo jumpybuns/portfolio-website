@@ -5,15 +5,21 @@ import { LandingHeader } from './LandingHeader';
 import { Circles } from './Circles';
 
 export const Landing = () => {
-  const clicked = (e) => {};
-
-  const handleOnClick = () => {
-    window.location.pathname = '/';
+  const handleClick = (e) => {
+    const circles = document.querySelectorAll('.circ');
+    circles.forEach((circ) => {
+      const circBounding = circ.getBoundingClientRect();
+      console.log(circBounding.top);
+    });
   };
+
+  // const handleOnClick = () => {
+  //   window.location.pathname = '/';
+  // };
   return (
     <>
       <div id="landing">
-        <div className={styles.container} onClick={clicked}>
+        <div className={styles.container} onClick={handleClick}>
           <Name />
           <LandingHeader />
           <Circles />

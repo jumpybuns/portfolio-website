@@ -15,13 +15,13 @@
   font-variant: small-caps;
   text-transform: capitalize;
   height: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 .firstName {
   display: flex;
   margin-top: 2%;
-  margin-left: 72%;
+  margin-left: 22%;
   margin-bottom: -2%;
   font-size: 6rem;
 }
@@ -29,7 +29,7 @@
 .lastName {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 67%;
+  margin-left: 64%;
   font-size: 6rem;
 }
 

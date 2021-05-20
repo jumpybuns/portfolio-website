@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import upArrow from '../../../public/upArrow.png';
-import aurora from './images/aurora.jpg';
-import karaoke from './images/karaoke.jpg';
-import chatable from './images/chatable.jpg';
-import bloom from './images/bloom.jpg';
+import aurora from './images/aurora2.png';
+import karaoke from './images/karaoke2.png';
+import chatable from './images/chatable2.png';
+import bloom from './images/bloom2.png';
 import styles from './Projects.css';
 import Header from '../header/Header';
 
@@ -32,66 +32,61 @@ export const Projects = () => {
   const [selectedTitle, setSelectedTitle] = useState(title.auroraTitle);
 
   return (
-    <>
-      <div id="top">
-        <Header />
-        <div id="projects">
-          <div className={styles.box1}>
-            <h1 className={styles.projectTitles}>{selectedTitle}</h1>
-            <img
-              className={styles.projectImages}
-              src={selected}
-              alt="project"
-            />
-            <p className={styles.projectText}>{selectedText}</p>
+    <div id="top">
+      <div id="projects" className={styles.container}>
+        <div className={styles.projectText}>
+          <h1 className={styles.projectTitles}>{selectedTitle}</h1>
+          <div className={styles.links}>
+            <h3
+              className={styles.aurora}
+              onMouseOver={() => {
+                setSelected(images.aurora);
+                setSelectedText(text.auroraText);
+                setSelectedTitle(title.auroraTitle);
+              }}
+            >
+              Aurora Synth
+            </h3>
+            <h3
+              className={styles.karaoke}
+              onMouseOver={() => {
+                setSelected(images.karaoke);
+                setSelectedText(text.karaokeText);
+                setSelectedTitle(title.karaokeTitle);
+              }}
+            >
+              Karaoke Roulette
+            </h3>
+            <h3
+              className={styles.chatable}
+              onMouseOver={() => {
+                setSelected(images.chatable);
+                setSelectedText(text.chatableText);
+                setSelectedTitle(title.chatableTitle);
+              }}
+            >
+              Chatable
+            </h3>
+            <h3
+              className={styles.bloom}
+              onMouseOver={() => {
+                setSelected(images.bloom);
+                setSelectedText(text.bloomText);
+                setSelectedTitle(title.bloomTitle);
+              }}
+            >
+              Bloom Financial
+            </h3>
           </div>
-          <h3
-            className={styles.aurora}
-            onClick={() => {
-              setSelected(images.aurora);
-              setSelectedText(text.auroraText);
-              setSelectedTitle(title.auroraTitle);
-            }}
-          >
-            Aurora Synth
-          </h3>
-          <h3
-            className={styles.karaoke}
-            onClick={() => {
-              setSelected(images.karaoke);
-              setSelectedText(text.karaokeText);
-              setSelectedTitle(title.karaokeTitle);
-            }}
-          >
-            Karaoke Roulette
-          </h3>
-          <h3
-            className={styles.chatable}
-            onClick={() => {
-              setSelected(images.chatable);
-              setSelectedText(text.chatableText);
-              setSelectedTitle(title.chatableTitle);
-            }}
-          >
-            Chatable
-          </h3>
-          <h3
-            className={styles.bloom}
-            onClick={() => {
-              setSelected(images.bloom);
-              setSelectedText(text.bloomText);
-              setSelectedTitle(title.bloomTitle);
-            }}
-          >
-            Bloom Financial
-          </h3>
+          <p className={styles.description}>{selectedText}</p>
         </div>
-        <div className={styles.arrow}>
-          <Link smooth to={'/projects#top'}>
-            <img src={upArrow} alt="" width="20px" />
-          </Link>
+        <div className={styles.projectImages}>
+          <img src={selected} alt="project" width="100%" />
         </div>
+        <Link className={styles.arrow} smooth to={'/projects#top'}>
+          <img src={upArrow} alt="" width="20px" />
+        </Link>
       </div>
-    </>
+    </div>
   );
 };
