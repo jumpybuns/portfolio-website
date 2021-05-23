@@ -6,7 +6,7 @@
   flex-flow: column nowrap;
   font-family: 'Squada One', cursive;
   font-size: 10rem;
-  letter-spacing: 25px;
+  letter-spacing: 15px;
   word-spacing: -0.8px;
   color: #000000;
   font-weight: 700;
@@ -20,16 +20,15 @@
 
 .firstName {
   display: flex;
-  margin-top: 2%;
-  margin-left: 22%;
-  margin-bottom: -2%;
+  margin-top: 12%;
+  margin-left: 32%;
   font-size: 6rem;
 }
 
 .lastName {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 64%;
+  margin-left: 54%;
   font-size: 6rem;
 }
 
@@ -37,7 +36,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 30%;
-  margin-left: 70%;
+  margin-top: 20%;
+  margin-left: 20%;
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 300;

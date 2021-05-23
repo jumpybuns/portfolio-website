@@ -22,6 +22,8 @@ export const Landing = () => {
         <div className={styles.container} onClick={handleClick}>
           <Name />
           <LandingHeader />
+          <p className={styles.click}>click</p>
+          <p className={styles.click2}>around</p>
           <Circles />
         </div>
       </div>

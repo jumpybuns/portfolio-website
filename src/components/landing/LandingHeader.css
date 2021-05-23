@@ -10,23 +10,18 @@
 }
 
 .words {
-  margin-top: 280%;
-  margin-left: 10%;
   word-spacing: 10px;
   text-decoration: none;
 }
 .words a:hover {
   color: aliceblue;
   margin-top: 33%;
-  margin-left: 10%;
   word-spacing: 10px;
   text-decoration: none;
 }
 
 .words a {
   color: black;
-  margin-top: 33%;
-  margin-left: 10%;
   word-spacing: 10px;
   text-decoration: none;
 }

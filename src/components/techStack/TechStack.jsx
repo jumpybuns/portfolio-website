@@ -6,36 +6,24 @@ import styles from './TechStack.css';
 
 export const TechStack = () => {
   return (
-    <>
-      <div id="top">
-        <Header />
-        <div id="techstack">
-          <div className={styles.gridContainer}>
-            <h1 className={styles.techStack}>TECH STACK</h1>
-            <div className={styles.languages}>
-              <h2 className={styles.techs}>Languages</h2>
-              <pre>Javascript HTML CSS Python</pre>
-            </div>
-            <div className={styles.frontEnd}>
-              <h2 className={styles.techs}>Front End</h2>
-              <pre>React D3 Material-UI Netlify</pre>
-            </div>
-            <div className={styles.backEnd}>
-              <h2 className={styles.techs}>Back End</h2>
-              <pre>Node.JS PostgreSQL Express BCrypt</pre>
-            </div>
-            <div className={styles.devTools}>
-              <h2 className={styles.techs}>Dev Tools</h2>
-              <pre>Heroku Postman PGAdmin</pre>
-            </div>
-          </div>
-        </div>
-        <div className={styles.arrow}>
-          <Link smooth to={'/techstack#top'}>
-            <img src={upArrow} alt="" width="20px" />
-          </Link>
-        </div>
+    <div id="techstack" className={styles.gridContainer}>
+      <h1 className={styles.techStack}>TECH STACK</h1>
+      <div className={styles.languages}>
+        <h2 className={styles.techs}>Languages</h2>
+        <pre>Javascript HTML CSS Python</pre>
       </div>
-    </>
+      <div className={styles.frontEnd}>
+        <h2 className={styles.techs}>Front End</h2>
+        <pre>React D3 Material-UI Netlify</pre>
+      </div>
+      <div className={styles.backEnd}>
+        <h2 className={styles.techs}>Back End</h2>
+        <pre>Node.JS PostgreSQL Express BCrypt</pre>
+      </div>
+      <div className={styles.devTools}>
+        <h2 className={styles.techs}>Dev Tools</h2>
+        <pre>Heroku Postman PGAdmin</pre>
+      </div>
+    </div>
   );
 };

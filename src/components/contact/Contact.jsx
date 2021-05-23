@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Header from '../header/Header';
-import Line from './Line';
 import styles from './Contact.css';
 import resume from '../../../public/resume.jpg';
 import upArrow from '../../../public/upArrow.png';
@@ -11,7 +9,6 @@ export const Contact = () => {
   return (
     <>
       <div id="top">
-        <Header />
         <div className={styles.container1}>
           <h1 className={styles.contact}>Contact</h1>
           <div id="contact">

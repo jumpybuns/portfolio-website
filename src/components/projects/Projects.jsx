@@ -32,61 +32,59 @@ export const Projects = () => {
   const [selectedTitle, setSelectedTitle] = useState(title.auroraTitle);
 
   return (
-    <div id="top">
-      <div id="projects" className={styles.container}>
-        <div className={styles.projectText}>
-          <h1 className={styles.projectTitles}>{selectedTitle}</h1>
-          <div className={styles.links}>
-            <h3
-              className={styles.aurora}
-              onMouseOver={() => {
-                setSelected(images.aurora);
-                setSelectedText(text.auroraText);
-                setSelectedTitle(title.auroraTitle);
-              }}
-            >
-              Aurora Synth
-            </h3>
-            <h3
-              className={styles.karaoke}
-              onMouseOver={() => {
-                setSelected(images.karaoke);
-                setSelectedText(text.karaokeText);
-                setSelectedTitle(title.karaokeTitle);
-              }}
-            >
-              Karaoke Roulette
-            </h3>
-            <h3
-              className={styles.chatable}
-              onMouseOver={() => {
-                setSelected(images.chatable);
-                setSelectedText(text.chatableText);
-                setSelectedTitle(title.chatableTitle);
-              }}
-            >
-              Chatable
-            </h3>
-            <h3
-              className={styles.bloom}
-              onMouseOver={() => {
-                setSelected(images.bloom);
-                setSelectedText(text.bloomText);
-                setSelectedTitle(title.bloomTitle);
-              }}
-            >
-              Bloom Financial
-            </h3>
-          </div>
-          <p className={styles.description}>{selectedText}</p>
+    <div id="projects" className={styles.container}>
+      <div className={styles.projectText}>
+        <h1 className={styles.projectTitles}>{selectedTitle}</h1>
+        <div className={styles.links}>
+          <h3
+            className={styles.aurora}
+            onMouseOver={() => {
+              setSelected(images.aurora);
+              setSelectedText(text.auroraText);
+              setSelectedTitle(title.auroraTitle);
+            }}
+          >
+            Aurora Synth
+          </h3>
+          <h3
+            className={styles.karaoke}
+            onMouseOver={() => {
+              setSelected(images.karaoke);
+              setSelectedText(text.karaokeText);
+              setSelectedTitle(title.karaokeTitle);
+            }}
+          >
+            Karaoke Roulette
+          </h3>
+          <h3
+            className={styles.chatable}
+            onMouseOver={() => {
+              setSelected(images.chatable);
+              setSelectedText(text.chatableText);
+              setSelectedTitle(title.chatableTitle);
+            }}
+          >
+            Chatable
+          </h3>
+          <h3
+            className={styles.bloom}
+            onMouseOver={() => {
+              setSelected(images.bloom);
+              setSelectedText(text.bloomText);
+              setSelectedTitle(title.bloomTitle);
+            }}
+          >
+            Bloom Financial
+          </h3>
         </div>
-        <div className={styles.projectImages}>
-          <img src={selected} alt="project" width="100%" />
-        </div>
-        <Link className={styles.arrow} smooth to={'/projects#top'}>
-          <img src={upArrow} alt="" width="20px" />
-        </Link>
+        <p className={styles.description}>{selectedText}</p>
       </div>
+      <div className={styles.projectImages}>
+        <img src={selected} alt="project" width="100%" />
+      </div>
+      <Link className={styles.arrow} smooth to={'/projects#top'}>
+        <img src={upArrow} alt="" width="20px" />
+      </Link>
     </div>
   );
 };

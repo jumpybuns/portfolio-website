@@ -1,5 +1,5 @@
 .container {
-  background-color: rgb(224, 255, 237);
+  background-color: coral;
   display: flex;
   flex-wrap: wrap;
   display: -webkit-box;
@@ -15,12 +15,13 @@
 .projectImages {
   flex-flow: row wrap;
   width: 50%;
-  -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  overflow: hidden;
 }
 
 .projectTitles {
   font-size: 5rem;
+  -webkit-animation: title 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: title 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .description {
@@ -34,11 +35,12 @@
 }
 
 .links {
-  color: rgb(39, 39, 33);
+  color: rgb(0, 0, 0);
   transition: all 0.3s;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 5%;
+  margin-left: 5%;
 }
 
 .links :hover {
@@ -49,9 +51,10 @@
   display: flex;
   flex: none;
   height: 5%;
+  margin-top: -3%;
 }
 
-@-webkit-keyframes image {
+@-webkit-keyframes title {
   100% {
     -webkit-filter: blur(0.01);
     filter: blur(0.01);
@@ -61,7 +64,7 @@
     filter: blur(12px) opacity(0%);
   }
 }
-@keyframes image {
+@keyframes title {
   100% {
     -webkit-filter: blur(0.01);
     filter: blur(0.01);
