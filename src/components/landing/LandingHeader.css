@@ -10,7 +10,7 @@
 }
 
 .words {
-  word-spacing: 10px;
+  margin-left: 50%;
   text-decoration: none;
 }
 .words a:hover {
@@ -22,6 +22,7 @@
 
 .words a {
   color: black;
-  word-spacing: 10px;
+  margin-left: 60%;
+  margin-right: -10%;
   text-decoration: none;
 }
