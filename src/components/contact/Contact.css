@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   flex: wrap;
+  border-bottom: 5px solid #000000;
 }
 
 .links {
@@ -54,4 +55,8 @@
 }
 
 .arrow {
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 45%;
+  margin-left: 19%;
 }

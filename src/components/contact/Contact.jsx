@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styles from './Contact.css';
-import resume from '../../../public/resume.jpg';
+import resume from '../../../public/resume.pdf';
 import upArrow from '../../../public/upArrow.png';
 import { Circles } from './Circles';
 
@@ -43,8 +43,8 @@ export const Contact = () => {
       </a>
       <h1 className={styles.contact}>Contact Me</h1>
       <Circles />
-      <HashLink smooth to={'/contact#top'}>
-        <img className={styles.arrow} src={upArrow} alt="" width="20px" />
+      <HashLink className={styles.arrow} smooth to={'#top'}>
+        <img src={upArrow} alt="" width="20px" />
       </HashLink>
     </div>
   );

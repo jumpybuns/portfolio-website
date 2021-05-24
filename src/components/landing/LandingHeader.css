@@ -9,13 +9,17 @@
   z-index: 999;
 }
 
-.words {
+.work {
+  margin-top: 5%;
   margin-left: 50%;
+}
+
+.words {
   text-decoration: none;
 }
 .words a:hover {
   color: aliceblue;
-  margin-top: 33%;
+
   word-spacing: 10px;
   text-decoration: none;
 }

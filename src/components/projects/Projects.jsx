@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import upArrow from '../../../public/upArrow.png';
 import aurora from './images/aurora2.png';
 import karaoke from './images/karaoke2.png';
 import chatable from './images/chatable2.png';
 import bloom from './images/bloom2.png';
 import styles from './Projects.css';
-import Header from '../header/Header';
 
 const images = { aurora, karaoke, chatable, bloom };
 

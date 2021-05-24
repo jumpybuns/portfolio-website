@@ -7,16 +7,16 @@ export const LandingHeader = () => {
     <div className={styles.container}>
       <div className={styles.words}>
         <div className={styles.work}>
-          <Link smooth to={'/#projects'}>
+          <Link smooth to={'#projects'}>
             Work
           </Link>
-          <Link smooth to={'/#aboutme'}>
-            Play
+          <Link smooth to={'#aboutme'}>
+            About
           </Link>
-          <Link smooth to={'/#techstack'}>
+          <Link smooth to={'#techstack'}>
             Tech
           </Link>
-          <Link smooth to={'/#contact'}>
+          <Link smooth to={'#contact'}>
             Contact
           </Link>
         </div>
