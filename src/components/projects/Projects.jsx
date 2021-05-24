@@ -82,9 +82,6 @@ export const Projects = () => {
       <div className={styles.projectImages}>
         <img src={selected} alt="project" width="100%" />
       </div>
-      <Link className={styles.arrow} smooth to={'/projects#top'}>
-        <img src={upArrow} alt="" width="20px" />
-      </Link>
     </div>
   );
 };

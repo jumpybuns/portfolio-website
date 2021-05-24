@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import styles from './Header.css';
 
 export default function Header() {
@@ -9,24 +9,24 @@ export default function Header() {
         <div className={styles.header}>
           <div className={styles.headerList}>
             <div className={styles.aboutme}>
-              <Link smooth to={'/aboutme#aboutme'}>
+              <HashLink smooth to={'/aboutme#aboutme'}>
                 About Me
-              </Link>
+              </HashLink>
             </div>
             <div className={styles.techstack}>
-              <Link smooth to={'/techstack#techstack'}>
+              <HashLink smooth to={'/techstack#techstack'}>
                 Tech Stack
-              </Link>
+              </HashLink>
             </div>
             <div className={styles.projects}>
-              <Link smooth to={'/projects#projects'}>
+              <HashLink smooth to={'/projects#projects'}>
                 Projects
-              </Link>
+              </HashLink>
             </div>
             <div className={styles.contact} style={{ textDecoration: 'none' }}>
-              <Link smooth to={'/contact#contact'}>
+              <HashLink smooth to={'/contact#contact'}>
                 Contact
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>

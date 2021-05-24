@@ -1,39 +1,57 @@
-.container1 {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  color: lightgray;
+  flex: wrap;
+}
+
+.links {
   flex: none;
+  font-size: 3.5rem;
+  margin-top: 40%;
   margin-left: 10%;
-  margin-top: 1%;
-  font-size: 3rem;
-  width: 80%;
+  width: 10%;
+}
+
+.links a:hover {
+  color: coral;
+}
+
+.links a {
+  color: cornsilk;
   text-decoration: none;
 }
 
-.button {
-  color: lightgray;
-  flex: none;
-  margin-left: 80%;
-  margin-top: 15%;
-  font-size: 3rem;
-  max-width: 100%;
+.myButton {
+  height: 10%;
+  width: 10%;
+  margin-top: 3%;
+  margin-left: 50%;
+  border-radius: 5px;
+  border: 4px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 11px 23px;
   text-decoration: none;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 .contact {
-  color: black;
+  position: relative;
+  width: 10%;
   font-size: 5rem;
-  flex: none;
-  margin-left: 5%;
-  margin-top: 15%;
+  margin-top: 25%;
+  margin-left: -20%;
 }
 
 .arrow {
-  flex: none;
 }

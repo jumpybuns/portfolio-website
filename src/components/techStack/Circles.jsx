@@ -3,9 +3,9 @@ import styles from './Circles.css';
 
 const width = window.innerWidth;
 const height = window.innerHeight;
-const circleRadius = 300;
-const intialMousePosition = { x: 0, y: 0 };
-const circleRadius2 = 150;
+const circleRadius = 200;
+const intialMousePosition = { x: 1500, y: 820 };
+const circleRadius2 = 100;
 
 export const Circles = () => {
   const [mousePosition, setMousePosition] = useState(intialMousePosition);
@@ -17,13 +17,14 @@ export const Circles = () => {
     [setMousePosition]
   );
 
+  console.log(mousePosition);
   return (
     <div id="container" className={styles.container}>
       <svg
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseDown={handleMouseMove}
+        onMouseClick={handleMouseMove}
       >
         <circle
           className="circ"

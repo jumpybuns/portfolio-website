@@ -12,10 +12,6 @@ export const Landing = () => {
       console.log(circBounding.top);
     });
   };
-
-  // const handleOnClick = () => {
-  //   window.location.pathname = '/';
-  // };
   return (
     <>
       <div id="landing">

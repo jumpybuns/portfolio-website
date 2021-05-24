@@ -1,4 +1,4 @@
-.container1 {
+.container {
   background-color: blanchedalmond;
   display: flex;
   height: 100vh;
@@ -6,11 +6,25 @@
 }
 
 .image {
-  justify-content: left;
   height: 100vh;
   width: 50vw;
   -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.text {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1.2rem;
+  -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.aboutMe {
+  font-size: 5rem;
+  flex: none;
+  margin-top: 35%;
+  margin-right: 8%;
 }
 
 @-webkit-keyframes image {
@@ -32,42 +46,6 @@
     -webkit-filter: blur(12px) opacity(0%);
     filter: blur(12px) opacity(0%);
   }
-}
-
-.container2 {
-  display: flex;
-  background-size: cover;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  font-weight: lighter;
-  width: 45%;
-  flex: none;
-  margin: 0;
-  padding: 0;
-  margin-left: 35%;
-  margin-top: -30%;
-}
-.container2 {
-  -webkit-animation: container2 0.95s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: container2 0.95s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-.aboutMeBox {
-  display: flex;
-  background-size: cover;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-
-  width: 40%;
-  flex: none;
-  margin: 0;
-  padding: 0;
-  margin-left: 55%;
-  margin-top: -35%;
-}
-.aboutMeBox {
-  -webkit-animation: aboutMeBox 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: aboutMeBox 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 @-webkit-keyframes container2 {
@@ -115,12 +93,4 @@
     filter: blur(4px);
     opacity: 0;
   }
-}
-.aboutMe {
-  font-size: 5rem;
-  border-top: 50px #1c6ea4;
-  display: flex;
-  flex: none;
-  margin-left: 65%;
-  margin-top: 5%;
 }
