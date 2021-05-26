@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+}
+circle {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+}
+
+circle active {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+  pointer-events: none;
+}
+
+.lastCircle {
+  fill: burlywood;
+}

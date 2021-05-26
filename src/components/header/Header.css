@@ -1,0 +1,94 @@
+.header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 127, 80, 1) 0%,
+    rgba(95, 158, 160, 1) 20%
+  );
+  border-top: 10px double #a23d27;
+  border-bottom: 50px double #a23d27;
+}
+
+.container {
+  display: grid;
+}
+
+.aboutme {
+  flex: 1;
+  font-size: 1.5rem;
+  list-style-type: none;
+  transition-duration: 0.8s;
+}
+
+.aboutme:hover {
+  background-color: black;
+  transform: translate(0%, 0%);
+}
+
+.aboutme a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.techstack {
+  flex: 1;
+
+  font-size: 1.5rem;
+  list-style-type: none;
+  transition-duration: 0.8s;
+}
+
+.techstack:hover {
+  background-color: black;
+  transform: translate(0%, 0%);
+}
+
+.techstack a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.projects {
+  flex: 1;
+
+  font-size: 1.5rem;
+  list-style-type: none;
+  color: whitesmoke;
+  transition-duration: 0.8s;
+}
+
+.projects:hover {
+  background-color: black;
+  transform: translate(0%, 0%);
+}
+
+.projects a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact {
+  flex: 1;
+  font-size: 1.5rem;
+  list-style-type: none;
+  transition-duration: 0.8s;
+}
+
+.contact:hover {
+  background-color: black;
+  transform: translate(0%, 0%);
+}
+
+.contact a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.backToTop {
+  position: relative;
+  left: 500px;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+}

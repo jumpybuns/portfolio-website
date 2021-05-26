@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.5rem;
+  color: black;
+  height: 0;
+  width: 0;
+  z-index: 999;
+}
+
+.work {
+  margin-top: 5%;
+  margin-left: 50%;
+}
+
+.words {
+  text-decoration: none;
+}
+.words a:hover {
+  color: aliceblue;
+
+  word-spacing: 10px;
+  text-decoration: none;
+}
+
+.words a {
+  color: black;
+  margin-left: 60%;
+  margin-right: -10%;
+  text-decoration: none;
+}

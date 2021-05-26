@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  height: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Squada One', cursive;
+  font-size: 10rem;
+  letter-spacing: 15px;
+  word-spacing: -0.8px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  height: 0;
+  z-index: 1;
+}
+
+.firstName {
+  display: flex;
+  margin-top: 12%;
+  margin-left: 50%;
+  font-size: 6rem;
+}
+
+.lastName {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70%;
+  font-size: 6rem;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  margin-top: 20%;
+  margin-left: 40%;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  word-spacing: -5px;
+}

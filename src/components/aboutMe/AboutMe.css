@@ -1,0 +1,97 @@
+.container {
+  background-color: blanchedalmond;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 5px solid #000000;
+}
+
+.image {
+  height: 100vh;
+  width: 50vw;
+  -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.text {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1.2rem;
+  -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+.aboutMe {
+  font-size: 5rem;
+  flex: none;
+  margin-top: 35%;
+  margin-right: 8%;
+}
+
+@-webkit-keyframes image {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes image {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+
+@-webkit-keyframes container2 {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes container2 {
+  100% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+
+@-webkit-keyframes aboutMeBox {
+  0% {
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes aboutMeBox {
+  0% {
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+}

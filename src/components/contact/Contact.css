@@ -1,0 +1,62 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex: wrap;
+  border-bottom: 5px solid #000000;
+}
+
+.links {
+  flex: none;
+  font-size: 3.5rem;
+  margin-top: 40%;
+  margin-left: 10%;
+  width: 10%;
+}
+
+.links a:hover {
+  color: coral;
+}
+
+.links a {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+.myButton {
+  height: 10%;
+  width: 10%;
+  margin-top: 3%;
+  margin-left: 50%;
+  border-radius: 5px;
+  border: 4px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 11px 23px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.contact {
+  position: relative;
+  width: 10%;
+  font-size: 5rem;
+  margin-top: 25%;
+  margin-left: -20%;
+}
+
+.arrow {
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 45%;
+  margin-left: 19%;
+}

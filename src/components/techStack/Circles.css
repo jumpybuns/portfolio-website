@@ -1,0 +1,21 @@
+.container {
+  position: absolute;
+  z-index: -1;
+}
+circle {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+  background-position: right bottom;
+}
+
+circle active {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+  pointer-events: none;
+}
+
+.lastCircle {
+  fill: burlywood;
+}
