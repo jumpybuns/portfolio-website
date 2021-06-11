@@ -1,45 +1,141 @@
-.container {
-  position: relative;
-  height: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  font-family: 'Squada One', cursive;
-  font-size: 10rem;
-  letter-spacing: 15px;
-  word-spacing: -0.8px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: capitalize;
-  height: 0;
-  z-index: 1;
+@media screen and (min-width: 200px) {
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: fantasy;
+    font-size: 10rem;
+    letter-spacing: 15px;
+    word-spacing: -0.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+
+  .firstName {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 5%;
+    font-size: 6rem;
+  }
+
+  .lastName {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    font-size: 6rem;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    word-spacing: -5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    position: relative;
+    height: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Squada One', cursive;
+    font-size: 10rem;
+    letter-spacing: 15px;
+    word-spacing: -0.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    height: 0;
+    z-index: 1;
+  }
+
+  .firstName {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 50%;
+    font-size: 6rem;
+  }
+
+  .lastName {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70%;
+    font-size: 6rem;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    word-spacing: -5px;
+  }
 }
 
-.firstName {
-  display: flex;
-  margin-top: 12%;
-  margin-left: 50%;
-  font-size: 6rem;
-}
+@media screen and (min-width: 1200px) {
+  .container {
+    position: relative;
+    height: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10rem;
+    letter-spacing: 15px;
+    word-spacing: -0.8px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    height: 0;
+    z-index: 1;
+  }
 
-.lastName {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 70%;
-  font-size: 6rem;
-}
+  .firstName {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 50%;
+    font-size: 6rem;
+  }
 
-.description {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  margin-top: 20%;
-  margin-left: 40%;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  font-weight: 300;
-  word-spacing: -5px;
+  .lastName {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70%;
+    font-size: 6rem;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    word-spacing: -5px;
+  }
 }
