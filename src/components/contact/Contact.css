@@ -1,17 +1,8 @@
 .container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex: wrap;
   border-bottom: 5px solid #000000;
 }
 
 .links {
-  flex: none;
-  font-size: 3.5rem;
-  margin-top: 40%;
-  margin-left: 10%;
-  width: 10%;
 }
 
 .links a:hover {
@@ -24,10 +15,6 @@
 }
 
 .myButton {
-  height: 10%;
-  width: 10%;
-  margin-top: 3%;
-  margin-left: 50%;
   border-radius: 5px;
   border: 4px solid #000000;
   display: inline-block;
@@ -48,15 +35,10 @@
 
 .contact {
   position: relative;
-  width: 10%;
+
   font-size: 5rem;
-  margin-top: 25%;
-  margin-left: -20%;
 }
 
 .arrow {
-  flex-wrap: wrap;
   position: relative;
-  margin-top: 45%;
-  margin-left: 19%;
 }

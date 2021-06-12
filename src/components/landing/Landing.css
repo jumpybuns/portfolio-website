@@ -1,17 +1,21 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  background-color: cadetblue;
   margin: 0;
-  height: 100%;
-  width: 100%;
-  border-bottom: 5px solid #000000;
 }
 
 .click {
   position: relative;
   z-index: 1;
   font-size: 1rem;
+  float: right;
   animation: fadeIn ease-in 4s;
+}
+
+.click2 {
+  z-index: 1;
+  font-size: 1rem;
+  float: right;
+  animation: fadeIn ease-in 5s;
 }
 
 @keyframes fadeIn {
@@ -24,12 +28,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.click2 {
-  z-index: 1;
-  font-size: 1rem;
-  animation: fadeIn ease-in 5s;
 }
 
 @keyframes fadeIn {

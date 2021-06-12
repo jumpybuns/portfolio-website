@@ -1,5 +1,6 @@
 .container {
   position: absolute;
+  margin: 0;
 }
 circle {
   fill: coral;

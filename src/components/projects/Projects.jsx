@@ -102,7 +102,7 @@ export const Projects = () => {
         <p className={styles.description}>{selectedText}</p>
       </div>
       <div className={styles.projectImages}>
-        <img src={selected} alt="project" width="100%" />
+        <img src={selected} alt="project" width="200px" />
       </div>
     </div>
   );

@@ -1,21 +1,13 @@
 .container {
-  background-color: blanchedalmond;
-  display: flex;
-  height: 100vh;
-  width: 100vw;
   border-bottom: 5px solid #000000;
 }
 
 .image {
-  height: 100vh;
-  width: 50vw;
   -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .text {
-  margin-left: 5%;
-  margin-top: 5%;
   font-size: 1.2rem;
   -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -23,9 +15,6 @@
 
 .aboutMe {
   font-size: 5rem;
-  flex: none;
-  margin-top: 35%;
-  margin-right: 8%;
 }
 
 @-webkit-keyframes image {

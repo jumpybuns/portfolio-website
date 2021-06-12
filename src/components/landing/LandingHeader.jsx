@@ -5,22 +5,28 @@ import styles from './LandingHeader.css';
 export const LandingHeader = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.words}>
-        <div className={styles.work}>
+      <ul>
+        <li>
           <Link smooth to={'#projects'}>
-            <h1>Work</h1>
+            <a>Work</a>
           </Link>
+        </li>
+        <li>
           <Link smooth to={'#aboutme'}>
-            <h1>About</h1>
+            <a>About</a>
           </Link>
+        </li>
+        <li>
           <Link smooth to={'#techstack'}>
-            <h1>Tech</h1>
+            <a>Tech</a>
           </Link>
+        </li>
+        <li>
           <Link smooth to={'#contact'}>
-            <h1>Contact</h1>
+            <a>Contact</a>
           </Link>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };

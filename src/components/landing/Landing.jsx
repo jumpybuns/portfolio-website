@@ -13,16 +13,12 @@ export const Landing = () => {
     });
   };
   return (
-    <>
-      <div id="landing">
-        <div className={styles.container} onClick={handleClick}>
-          <LandingHeader />
-          <Name />
-          <p className={styles.click}>click</p>
-          <p className={styles.click2}>around</p>
-          <Circles />
-        </div>
-      </div>
-    </>
+    <div id="landing" className={styles.container} onClick={handleClick}>
+      <Circles />
+      <Name />
+      <p className={styles.click}>click</p>
+      <p className={styles.click2}>around</p>
+      <LandingHeader />
+    </div>
   );
 };

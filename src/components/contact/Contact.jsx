@@ -15,14 +15,14 @@ export const Contact = () => {
           target="_blank"
           style={{ textDecoration: 'none' }}
         >
-          GitHub
+          <p> GitHub</p>
         </Link>
         <Link
           to={{ pathname: 'https://mail.google.com/' }}
           target="_blank"
           style={{ textDecoration: 'none' }}
         >
-          Email
+          <p>Email</p>
         </Link>
         <Link
           to={{
@@ -31,7 +31,7 @@ export const Contact = () => {
           target="_blank"
           style={{ textDecoration: 'none' }}
         >
-          LinkedIn
+          <p>LinkedIn</p>
         </Link>
       </div>
       <a

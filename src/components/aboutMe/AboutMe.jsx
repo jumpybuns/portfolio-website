@@ -5,7 +5,12 @@ import ethan from '../../../public/ethan.jpg';
 export const AboutMe = () => {
   return (
     <div id="aboutme" className={styles.container}>
-      <img className={styles.image} alt="ethan" src={ethan} />{' '}
+      <img
+        className={styles.image}
+        alt="ethan"
+        src={ethan}
+        style={{ width: '200px' }}
+      />
       <h3 className={styles.text}>
         I am focused and have a unique perspective with a passion for
         creativity, fixing bugs, problem solving and I love discussing new
