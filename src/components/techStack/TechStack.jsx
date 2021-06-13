@@ -22,7 +22,6 @@ export const TechStack = () => {
             <pre>Heroku Postman PGAdmin</pre>
           </div>
         </div>
-        <Circles />
       </div>
     </>
   );

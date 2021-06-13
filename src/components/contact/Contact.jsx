@@ -10,7 +10,6 @@ import { style } from 'd3-selection';
 export const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
-      <Circles />
       <div className={style.contactMe}>
         <h1 className={styles.contact}>Contact Me</h1>
       </div>
