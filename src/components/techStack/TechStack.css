@@ -1,25 +1,27 @@
 .gridContainer {
   display: flex;
-  padding-left: 1rem;
 }
 
 .container {
+  width: 100%;
 }
 .techStack {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  width: 100%;
 }
 
 .techs h2 {
-  font-size: 3rem;
+  width: 100%;
+  font-size: 2.5rem;
   overflow: hidden;
 }
 
 .techs pre {
-  padding-left: 2rem;
+  border-width: 50%;
   font-size: 2.5rem;
   font-weight: bolder;
   font-size: 1.5rem;
   border-bottom: 5px solid #1c6ea4;
   border-radius: 5px 0px 0px 40px;
-  background-color: lightgray;
+  background-color: coral;
 }

@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 5px solid #000000;
@@ -28,9 +29,9 @@
 }
 .text2 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
   margin-left: 1rem;
-  width: 90%;
+  width: 50%;
   padding: 10px;
   font-size: 1.2rem;
   -webkit-animation: text 0.75s cubic-bezier(0.6, 0, 0.9, 0.97) both;
