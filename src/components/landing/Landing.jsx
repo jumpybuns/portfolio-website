@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Landing.css';
-import Name from './Name';
 import { LandingHeader } from './LandingHeader';
 import { Circles } from './Circles';
+import { Click } from './Click';
 
 export const Landing = () => {
   const handleClick = (e) => {
@@ -13,12 +13,11 @@ export const Landing = () => {
     });
   };
   return (
-    <div id="landing" className={styles.container} onClick={handleClick}>
-      <Circles />
-      <Name />
-      <p className={styles.click}>click</p>
-      <p className={styles.click2}>around</p>
-      <LandingHeader />
-    </div>
+    <>
+      <div id="landing" className={styles.container} onClick={handleClick}>
+        <Circles />
+        <LandingHeader />
+      </div>
+    </>
   );
 };

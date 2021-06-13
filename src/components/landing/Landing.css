@@ -1,43 +1,5 @@
 .container {
   background-color: cadetblue;
   margin: 0;
-}
-
-.click {
-  position: relative;
-  z-index: 1;
-  font-size: 1rem;
-  float: right;
-  animation: fadeIn ease-in 4s;
-}
-
-.click2 {
-  z-index: 1;
-  font-size: 1rem;
-  float: right;
-  animation: fadeIn ease-in 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  width: 100%;
 }

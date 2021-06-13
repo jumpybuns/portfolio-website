@@ -1,9 +1,7 @@
 .container {
   vertical-align: top;
-
-  position: relative;
-  padding: 1rem;
-  font-weight: 700;
+  display: flex;
+  font-weight: 900;
   font-style: normal;
   font-variant: small-caps;
   text-transform: capitalize;
@@ -11,18 +9,8 @@
   z-index: 1;
 }
 
-.firstName {
-  font-size: 3rem;
-  float: left;
-}
-
-.lastName {
-  font-size: 3rem;
-  padding-top: 1rem;
-}
-
 .description {
   font-size: 1.5rem;
   width: 20%;
-  float: initial;
+  margin-bottom: 5rem;
 }

@@ -9,8 +9,8 @@ export const Home = () => {
   return (
     <div id="top">
       <Landing />
-      <Projects />
       <AboutMe />
+      <Projects />
       <TechStack />
       <Contact />
     </div>

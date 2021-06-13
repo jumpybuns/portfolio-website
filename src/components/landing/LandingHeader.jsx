@@ -7,23 +7,23 @@ export const LandingHeader = () => {
     <div className={styles.container}>
       <ul>
         <li>
-          <Link smooth to={'#projects'}>
-            <a>Work</a>
+          <Link smooth to={'#aboutme'}>
+            <p>About</p>
           </Link>
         </li>
         <li>
-          <Link smooth to={'#aboutme'}>
-            <a>About</a>
+          <Link smooth to={'#projects'}>
+            <p>Work</p>
           </Link>
         </li>
         <li>
           <Link smooth to={'#techstack'}>
-            <a>Tech</a>
+            <p>Tech</p>
           </Link>
         </li>
         <li>
           <Link smooth to={'#contact'}>
-            <a>Contact</a>
+            <p>Contact</p>
           </Link>
         </li>
       </ul>

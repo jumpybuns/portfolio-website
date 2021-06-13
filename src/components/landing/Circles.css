@@ -18,3 +18,26 @@ circle active {
 .lastCircle {
   fill: burlywood;
 }
+
+text {
+  font-size: 6.5rem;
+  font-family: 'Oswald', sans-serif;
+  fill: black;
+  font-weight: 900;
+  letter-spacing: 0.8rem;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+.description {
+  position: absolute;
+  top: 60%;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  margin-left: 1rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  width: 20%;
+}
