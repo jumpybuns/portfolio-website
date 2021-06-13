@@ -1,8 +1,6 @@
 .gridContainer {
   display: flex;
-
   padding-left: 1rem;
-  border-top: 5px solid black;
 }
 
 .container {

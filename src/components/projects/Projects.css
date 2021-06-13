@@ -21,6 +21,7 @@
 .projectImages img {
   width: 100%;
   margin-bottom: -1%;
+  border-bottom: 5px solid black;
 }
 
 .description {
