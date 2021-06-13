@@ -1,27 +1,55 @@
 .container {
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 5px solid #000000;
 }
 
-.links {
+.contactMe {
+  flex-wrap: wrap;
+}
+.contact {
+  padding-left: 1rem;
+  font-size: 4rem;
 }
 
-.links a:hover {
+.links {
+  width: 100%;
+  display: inline-block;
+}
+
+.links p {
+  height: 0;
+  padding: 2rem;
+  padding-left: 2rem;
+  color: cornsilk;
+  flex: row wrap;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.links p a:hover {
   color: coral;
 }
 
-.links a {
-  color: cornsilk;
+.links p a {
   text-decoration: none;
+  list-style: none;
 }
 
+.downloadButton {
+  align-items: center;
+  width: 100%;
+}
 .myButton {
   border-radius: 5px;
   border: 4px solid #000000;
+  text-align: center;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  font-size: 2rem;
-  padding: 11px 23px;
+  color: cornsilk;
+  font-family: 'Oswald', sans-serif, bold;
+  font-size: 3.5rem;
+  letter-spacing: 10px;
   text-decoration: none;
 }
 .myButton:hover {
@@ -29,16 +57,13 @@
   background-color: #6c7c7c;
 }
 .myButton:active {
-  position: relative;
   top: 1px;
 }
 
-.contact {
-  position: relative;
-
-  font-size: 5rem;
-}
-
-.arrow {
-  position: relative;
+.topArrow img {
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+  padding: 30%;
+  margin-left: 10%;
 }
