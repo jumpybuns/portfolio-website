@@ -8,9 +8,8 @@ export const AboutMe = () => {
   return (
     <div id="aboutme" className={styles.container}>
       <h3 className={styles.text}>
-        Focused and have a unique perspective with a passion for creativity,
-        fixing bugs, problem solving and I love discussing new concepts and
-        ideas.
+        Focused with a unique perspective and a passion for creativity, fixing
+        bugs, problem solving. I love discussing new concepts and interesting ideas.
       </h3>
       <div className={styles.profile}>
         <Link
