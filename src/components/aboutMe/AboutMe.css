@@ -1,20 +1,44 @@
 .container {
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 5px solid #000000;
   background-color: blanchedalmond;
+  padding-top: 10%;
+}
+
+.profile {
+  padding-top: 7%;
 }
 
 .image {
+  margin-left: 1rem;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
   -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .text {
+  width: 25%;
+  padding-left: 5%;
   font-size: 1.2rem;
   -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
+.text2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  width: 90%;
+  padding: 10px;
+  font-size: 1.2rem;
+  -webkit-animation: text 0.75s cubic-bezier(0.6, 0, 0.9, 0.97) both;
+  animation: text 0.75s cubic-bezier(0.6, 0, 0.9, 0.97) both;
+}
 
 .aboutMe {
+  padding-left: 1rem;
   font-size: 5rem;
 }
 

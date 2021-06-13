@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import aurora from './images/aurora2.png';
-import karaoke from './images/karaoke2.png';
-import chatable from './images/chatable2.png';
-import bloom from './images/bloom2.png';
+import aurora from './images/auroraWide.jpg';
+import karaoke from './images/karaokeWide.jpg';
+import chatable from './images/chatableWide.jpg';
+import bloom from './images/bloomWide.jpg';
 import styles from './Projects.css';
 
 const images = { aurora, karaoke, chatable, bloom };
@@ -31,75 +31,77 @@ export const Projects = () => {
 
   return (
     <div id="projects" className={styles.container}>
+      <div className={styles.links}>
+        <Link
+          to={{ pathname: 'https://aurora-synth.netlify.app/' }}
+          style={{ textDecoration: 'none', color: 'black' }}
+          target="_blank"
+        >
+          <h3
+            className={styles.aurora}
+            onMouseOver={() => {
+              setSelected(images.aurora);
+              setSelectedText(text.auroraText);
+              setSelectedTitle(title.auroraTitle);
+            }}
+          >
+            Aurora Synth
+          </h3>
+        </Link>
+        <Link
+          to={{ pathname: 'https://karaoke-roulette.netlify.app/' }}
+          style={{ textDecoration: 'none', color: 'black' }}
+          target="_blank"
+        >
+          <h3
+            className={styles.karaoke}
+            onMouseOver={() => {
+              setSelected(images.karaoke);
+              setSelectedText(text.karaokeText);
+              setSelectedTitle(title.karaokeTitle);
+            }}
+          >
+            Karaoke Roulette
+          </h3>
+        </Link>
+        <Link
+          to={{ pathname: 'https://adoring-wright-0eba98.netlify.app/' }}
+          target="_blank"
+          style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <h3
+            className={styles.chatable}
+            onMouseOver={() => {
+              setSelected(images.chatable);
+              setSelectedText(text.chatableText);
+              setSelectedTitle(title.chatableTitle);
+            }}
+          >
+            Chatable
+          </h3>
+        </Link>
+        <Link
+          to={{ pathname: 'https://bloom-financial.netlify.app/' }}
+          target="_blank"
+          style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <h3
+            className={styles.bloom}
+            onMouseOver={() => {
+              setSelected(images.bloom);
+              setSelectedText(text.bloomText);
+              setSelectedTitle(title.bloomTitle);
+            }}
+          >
+            Bloom Financial
+          </h3>
+        </Link>
+      </div>
       <div className={styles.projectText}>
         <h1 className={styles.projectTitles}>{selectedTitle}</h1>
-        <div className={styles.links}>
-          <Link
-            to={{ pathname: 'https://aurora-synth.netlify.app/' }}
-            style={{ textDecoration: 'none', color: 'black' }}
-            target="_blank"
-          >
-            <h3
-              className={styles.aurora}
-              onMouseOver={() => {
-                setSelected(images.aurora);
-                setSelectedText(text.auroraText);
-                setSelectedTitle(title.auroraTitle);
-              }}
-            >
-              Aurora Synth
-            </h3>
-          </Link>
-          <Link
-            to={{ pathname: 'https://karaoke-roulette.netlify.app/' }}
-            style={{ textDecoration: 'none', color: 'black' }}
-            target="_blank"
-          >
-            <h3
-              className={styles.karaoke}
-              onMouseOver={() => {
-                setSelected(images.karaoke);
-                setSelectedText(text.karaokeText);
-                setSelectedTitle(title.karaokeTitle);
-              }}
-            >
-              Karaoke Roulette
-            </h3>
-          </Link>
-          <Link
-            to={{ pathname: 'https://adoring-wright-0eba98.netlify.app/' }}
-            target="_blank"
-            style={{ textDecoration: 'none', color: 'black' }}
-          >
-            <h3
-              className={styles.chatable}
-              onMouseOver={() => {
-                setSelected(images.chatable);
-                setSelectedText(text.chatableText);
-                setSelectedTitle(title.chatableTitle);
-              }}
-            >
-              Chatable
-            </h3>
-          </Link>
-          <Link
-            to={{ pathname: 'https://bloom-financial.netlify.app/' }}
-            target="_blank"
-            style={{ textDecoration: 'none', color: 'black' }}
-          >
-            <h3
-              className={styles.bloom}
-              onMouseOver={() => {
-                setSelected(images.bloom);
-                setSelectedText(text.bloomText);
-                setSelectedTitle(title.bloomTitle);
-              }}
-            >
-              Bloom Financial
-            </h3>
-          </Link>
-        </div>
-        <p className={styles.description}>{selectedText}</p>
+      </div>
+      <div className={styles.description}>
+        <p>{selectedText}</p>
       </div>
       <div className={styles.projectImages}>
         <img src={selected} alt="project" width="200px" />
