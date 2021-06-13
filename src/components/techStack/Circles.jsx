@@ -17,7 +17,6 @@ export const Circles = () => {
     [setMousePosition]
   );
 
-  console.log(mousePosition);
   return (
     <div id="container" className={styles.container}>
       <svg className={styles.mydivheader} width={width} height={height}>
