@@ -13,7 +13,7 @@ export const TechStack = () => {
             <pre>Javascript HTML CSS</pre>
 
             <h2>Front End</h2>
-            <pre>React D3 Material-UI Netlify</pre>
+            <pre>React Typescript Rails</pre>
 
             <h2>Back End</h2>
             <pre>Node GraphQL SQL Express</pre>
