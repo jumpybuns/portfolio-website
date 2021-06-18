@@ -27,7 +27,7 @@ ul li a:hover {
 
 ul li a {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   list-style-type: none;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;

@@ -69,10 +69,10 @@ export const Circles = () => {
           cy={mousePosition.y * 0.6}
           r={circleRadius - circleRadius2}
         />
-        <text x="20" y="250">
+        <text x="20" y="225">
           Ethan
         </text>
-        <text x="60" y="350">
+        <text x="60" y="325">
           Pierce
         </text>
       </svg>

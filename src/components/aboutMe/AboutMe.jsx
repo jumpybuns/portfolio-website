@@ -7,9 +7,11 @@ import ethan from '../../../public/ethan.jpg';
 export const AboutMe = () => {
   return (
     <div id="aboutme" className={styles.container}>
+      <h1 className={styles.aboutMe}>ABOUT ME</h1>
       <h3 className={styles.text}>
         Focused with a unique perspective and a passion for creativity, fixing
-        bugs, problem solving. I love discussing new concepts and interesting ideas.
+        bugs, problem solving. I love discussing new concepts and interesting
+        ideas.
       </h3>
       <div className={styles.profile}>
         <Link
@@ -31,7 +33,6 @@ export const AboutMe = () => {
         situations and is able to relate and communicate well with clients and
         coworkers alike.
       </h3>
-      <h1 className={styles.aboutMe}>ABOUT ME</h1>
     </div>
   );
 };
