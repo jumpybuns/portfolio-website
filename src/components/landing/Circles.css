@@ -1,6 +1,7 @@
 .container {
   position: absolute;
   margin: 0;
+  padding: 0;
 }
 circle {
   fill: coral;
@@ -31,7 +32,7 @@ text {
 
 .description {
   position: absolute;
-  top: 60%;
+  top: 55%;
   font-weight: 900;
   font-style: normal;
   font-variant: small-caps;

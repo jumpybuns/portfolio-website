@@ -1,7 +1,8 @@
 .container {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  border-top: 5px solid black;
   border-bottom: 5px solid #000000;
   background-color: blanchedalmond;
   padding-top: 1%;
