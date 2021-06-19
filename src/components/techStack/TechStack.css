@@ -3,10 +3,11 @@
 }
 
 .container {
+  padding-left: 0.5rem;
   width: 100%;
 }
 .techStack {
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
 }
 

@@ -10,35 +10,44 @@ import { style } from 'd3-selection';
 export const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
-      <div className={style.contactMe}>
+      <div className={styles.contactMe}>
         <h1 className={styles.contact}>Contact Me</h1>
       </div>
-      <div className={styles.links}>
-        <Link
-          to={{ pathname: 'https://github.com/jumpybuns' }}
-          target="_blank"
-          style={{ textDecoration: 'none' }}
-        >
-          <p> GitHub</p>
-        </Link>
-        <Link
-          to={{ pathname: 'https://mail.google.com/' }}
-          target="_blank"
-          style={{ textDecoration: 'none' }}
-        >
-          <p>Email</p>
-        </Link>
-        <Link
-          to={{
-            pathname: 'https://www.linkedin.com/in/ethanpiercepresents',
-          }}
-          target="_blank"
-          style={{ textDecoration: 'none' }}
-        >
-          <p>LinkedIn</p>
-        </Link>
+      <div className={styles.stanger}>
+        <h2>Say Hi!</h2>
       </div>
-      <div className={style.downloadButton}>
+      <ul className={styles.links}>
+        <li>
+          <Link
+            to={{ pathname: 'https://mail.google.com/' }}
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            EthanPiercePresents@gmail.com
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={{ pathname: 'https://github.com/jumpybuns' }}
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            GitHub
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={{
+              pathname: 'https://www.linkedin.com/in/ethanpiercepresents',
+            }}
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            LinkedIn
+          </Link>
+        </li>
+      </ul>
+      <div className={styles.downloadButton}>
         <a
           className={styles.myButton}
           href={resume}
@@ -49,8 +58,6 @@ export const Contact = () => {
       </div>
       <div className={style.topArrow}>
         <HashLink className={styles.arrow} smooth to={'#top'}>
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
           <img src={upArrow} alt="" width="10%" />
           <img src={upArrow} alt="" width="10%" />
           <img src={upArrow} alt="" width="10%" />
