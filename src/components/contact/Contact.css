@@ -48,13 +48,12 @@
 
 .downloadButton {
   display: flex;
-  width: 97%;
+  width: 100%;
   margin: 0;
   align-items: center;
 }
 .downloadButton a {
   display: flex;
-  width: 85%;
   margin: 0;
   align-items: center;
 }
