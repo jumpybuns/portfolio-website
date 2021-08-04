@@ -1,6 +1,75 @@
 .container {
-  background-color: cadetblue;
-  margin: 0;
   width: 100%;
   height: 100vh;
+  z-index: 1;
+}
+
+.header {
+  margin: 0% 0% 0% 0%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  width: 100%;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  display: inline-flex;
+}
+
+ul li {
+  padding: 2% 5% 2% 5%;
+  letter-spacing: 0.8rem;
+  color: black;
+}
+
+ul li:hover a {
+  color: grey;
+  -webkit-text-stroke-width: 2px;
+}
+
+ul li a {
+  font-weight: 900;
+  list-style: none;
+  font-size: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  transition: ease 1s;
+}
+.landingContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameBox {
+  width: 30%;
+  display: flex;
+  position: relative;
+  left: 33%;
+}
+
+.name {
+  font-family: inherit;
+  font-family: 'Heebo', sans-serif;
+  font-size: 5rem;
+}
+
+.hidden {
+  font-size: 2rem;
+  transform: rotate(90deg);
+  width: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.nameBox:hover .hidden {
+  width: 100%;
+  opacity: 1;
 }

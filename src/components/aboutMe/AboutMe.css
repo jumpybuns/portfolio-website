@@ -1,16 +1,11 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-  width: 100%;
   border-top: 5px solid black;
   border-bottom: 5px solid #000000;
   background-color: blanchedalmond;
 }
 
 .profile {
-  padding-top: 7%;
 }
 
 .image {

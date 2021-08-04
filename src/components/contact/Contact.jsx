@@ -58,14 +58,14 @@ export const Contact = () => {
       </div>
       <div className={style.topArrow}>
         <HashLink className={styles.arrow} smooth to={'#top'}>
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
-          <img src={upArrow} alt="" width="10%" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
+          <img src={upArrow} alt="" width="10px" />
         </HashLink>
       </div>
     </div>

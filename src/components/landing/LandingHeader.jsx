@@ -4,7 +4,7 @@ import styles from './LandingHeader.css';
 
 export const LandingHeader = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.landingContainer}>
       <ul>
         <li>
           <Link smooth to={'#aboutme'}>

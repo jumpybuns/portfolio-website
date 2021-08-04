@@ -1,9 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import styles from './Circles.css';
-
 const width = window.innerWidth;
 const height = window.innerHeight;
-const circleRadius = 300;
+const circleRadius = 200;
 const intialMousePosition = { x: 0, y: 0 };
 const circleRadius2 = 150;
 
@@ -23,7 +22,7 @@ export const Circles = () => {
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseDown={handleMouseMove}
+        onMouseOver={handleMouseMove}
       >
         <circle
           className="circ"
@@ -69,16 +68,7 @@ export const Circles = () => {
           cy={mousePosition.y * 0.6}
           r={circleRadius - circleRadius2}
         />
-        <text x="20" y="225">
-          Ethan
-        </text>
-        <text x="60" y="325">
-          Pierce
-        </text>
       </svg>
-      <div className={styles.description}>
-        <p>Freelance Fullstack Developer based in Portland, OR</p>
-      </div>
     </div>
   );
 };

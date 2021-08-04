@@ -80,7 +80,7 @@
 .topArrow img {
   display: inline-block;
   justify-content: center;
-  width: 100%;
+  max-width: 5%;
   margin-left: 10%;
 }
 
