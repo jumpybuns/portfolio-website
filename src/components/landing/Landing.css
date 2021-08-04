@@ -10,6 +10,7 @@
   font-weight: 900;
   width: 100%;
   z-index: 1;
+  padding-left: 33%;
 }
 
 ul {
@@ -33,7 +34,7 @@ ul li:hover a {
 ul li a {
   font-weight: 900;
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   list-style-type: none;
   text-decoration: none;
   color: black;
@@ -58,7 +59,7 @@ ul li a {
 .name {
   font-family: inherit;
   font-family: 'Heebo', sans-serif;
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 .hidden {
@@ -72,4 +73,8 @@ ul li a {
 .nameBox:hover .hidden {
   width: 100%;
   opacity: 1;
+}
+
+.description {
+  font-family: 'Heebo', sans-serif;
 }

@@ -34,16 +34,3 @@ text {
   font-variant: small-caps;
   text-transform: capitalize;
 }
-
-.description {
-  position: absolute;
-  top: 60%;
-  font-weight: 900;
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: capitalize;
-  margin-left: 1rem;
-  z-index: 1;
-  font-size: 1.5rem;
-  width: 20%;
-}
