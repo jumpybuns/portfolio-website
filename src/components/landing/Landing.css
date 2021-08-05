@@ -59,7 +59,7 @@ ul li a {
 .name {
   font-family: inherit;
   font-family: 'Heebo', sans-serif;
-  font-size: 10rem;
+  font-size: 11rem;
 }
 
 .hidden {
@@ -76,5 +76,12 @@ ul li a {
 }
 
 .description {
-  font-family: 'Heebo', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  top: 10%;
 }
