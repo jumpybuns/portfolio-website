@@ -6,28 +6,29 @@ import chatable from './images/chatableWide.jpg';
 import bloom from './images/bloomWide.jpg';
 import styles from './Projects.css';
 
-const images = { aurora, karaoke, chatable, bloom };
-
-const auroraText =
-  'Beautiful interactive web browser synth built with vanilla JavaScript and Web Audio API. I implimented the series of audio nodes and created the different wave shapes and filters as well as used ChartJS to create the dynamic graph';
-const karaokeText =
-  'Social app utilizing YouTube API to create randomized karaoke videos. We used Javascript, React, SQL, Heroku, Netlify, CSS I created the API call, implemented the authorization, ran tests, and created the CRUD routes.';
-const chatableText =
-  'Instantaneous live chat app and chat rooms created with Socket.IO and Material-UI. I designed and created the messaging emits and broadcasts. I also wrote the User and Auth models/routes. ';
-const bloomText =
-  'Stock Trading learning tool using NewsAPI, Live Stock Ticker, Finance Widget and seemlessly integrating Alpaca Finance with your own portfolio. I setup the Oauth, created the landing page and built the entirety of the Alpaca integration.';
-const text = { auroraText, karaokeText, chatableText, bloomText };
-
 const auroraTitle = 'Aurora Synth';
 const karaokeTitle = 'Karaoke Roulette';
 const chatableTitle = 'Chatable';
 const bloomTitle = 'Bloom Financial';
-const title = { auroraTitle, karaokeTitle, chatableTitle, bloomTitle };
+
+const auroraText =
+  'Beautiful interactive web browser synth built with vanilla JavaScript and Web Audio API. I implimented the series of audio nodes and created the different wave shapes and filters as well as used ChartJS to create the dynamic graph';
+
+const karaokeText =
+  'Social app utilizing YouTube API to create randomized karaoke videos. We used Javascript, React, SQL, Heroku, Netlify, CSS I created the API call, implemented the authorization, ran tests, and created the CRUD routes.';
+
+const chatableText =
+  'Instantaneous live chat app and chat rooms created with Socket.IO and Material-UI. I designed and created the messaging emits and broadcasts. I also wrote the User and Auth models/routes. ';
+
+const bloomText =
+  'Stock Trading learning tool using NewsAPI, Live Stock Ticker, Finance Widget and seemlessly integrating Alpaca Finance with your own portfolio. I setup the Oauth, created the landing page and built the entirety of the Alpaca integration.';
+
+const images = { aurora, karaoke, chatable, bloom };
 
 export const Projects = () => {
   const [selected, setSelected] = useState(images.aurora);
-  const [selectedText, setSelectedText] = useState(text.auroraText);
-  const [selectedTitle, setSelectedTitle] = useState(title.auroraTitle);
+  const [selectedText, setSelectedText] = useState(auroraText);
+  const [selectedTitle, setSelectedTitle] = useState(auroraTitle);
 
   return (
     <div id="projects" className={styles.container}>
@@ -41,8 +42,8 @@ export const Projects = () => {
             className={styles.aurora}
             onMouseOver={() => {
               setSelected(images.aurora);
-              setSelectedText(text.auroraText);
-              setSelectedTitle(title.auroraTitle);
+              setSelectedText(auroraText);
+              setSelectedTitle(auroraTitle);
             }}
           >
             Aurora Synth
@@ -57,8 +58,8 @@ export const Projects = () => {
             className={styles.karaoke}
             onMouseOver={() => {
               setSelected(images.karaoke);
-              setSelectedText(text.karaokeText);
-              setSelectedTitle(title.karaokeTitle);
+              setSelectedText(karaokeText);
+              setSelectedTitle(karaokeTitle);
             }}
           >
             Karaoke Roulette
@@ -73,8 +74,8 @@ export const Projects = () => {
             className={styles.chatable}
             onMouseOver={() => {
               setSelected(images.chatable);
-              setSelectedText(text.chatableText);
-              setSelectedTitle(title.chatableTitle);
+              setSelectedText(chatableText);
+              setSelectedTitle(chatableTitle);
             }}
           >
             Chatable
@@ -89,8 +90,8 @@ export const Projects = () => {
             className={styles.bloom}
             onMouseOver={() => {
               setSelected(images.bloom);
-              setSelectedText(text.bloomText);
-              setSelectedTitle(title.bloomTitle);
+              setSelectedText(bloomText);
+              setSelectedTitle(bloomTitle);
             }}
           >
             Bloom Financial
@@ -98,13 +99,11 @@ export const Projects = () => {
         </Link>
       </div>
       <div className={styles.projectText}>
-        <h1 className={styles.projectTitles}>{selectedTitle}</h1>
+        <h1 className={styles.work}>WORK</h1>
+        <img src={selected} alt="project" width="200px" />
       </div>
       <div className={styles.description}>
         <p>{selectedText}</p>
-      </div>
-      <div className={styles.projectImages}>
-        <img src={selected} alt="project" width="200px" />
       </div>
     </div>
   );
