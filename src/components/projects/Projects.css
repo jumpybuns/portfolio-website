@@ -65,6 +65,8 @@
 }
 
 .projectText img {
+  box-shadow: 3px 7px khaki;
+  border-radius: 50%;
   padding-top: 5%;
   width: 100%;
   max-width: 100%;
