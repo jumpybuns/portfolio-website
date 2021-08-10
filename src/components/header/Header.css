@@ -28,7 +28,7 @@
 
 .aboutme a {
   text-decoration: none;
-  color: whitesmoke;
+  color: cornsilk;
 }
 
 .techstack {
@@ -46,7 +46,7 @@
 
 .techstack a {
   text-decoration: none;
-  color: whitesmoke;
+  color: cornsilk;
 }
 
 .projects {
@@ -54,7 +54,7 @@
 
   font-size: 1.5rem;
   list-style-type: none;
-  color: whitesmoke;
+  color: cornsilk;
   transition-duration: 0.8s;
 }
 
@@ -65,7 +65,7 @@
 
 .projects a {
   text-decoration: none;
-  color: whitesmoke;
+  color: cornsilk;
 }
 
 .contact {
@@ -82,7 +82,7 @@
 
 .contact a {
   text-decoration: none;
-  color: whitesmoke;
+  color: cornsilk;
 }
 
 .backToTop {

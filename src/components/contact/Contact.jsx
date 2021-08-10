@@ -10,10 +10,11 @@ import { style } from 'd3-selection';
 export const Contact = () => {
   return (
     <div id="contact" className={styles.container}>
+      <Circles />
       <div className={styles.contactMe}>
-        <h1 className={styles.contact}>Contact Me</h1>
+        <h1>Contact Me</h1>
       </div>
-      <div className={styles.stanger}>
+      <div className={styles.hi}>
         <h2>Say Hi!</h2>
       </div>
       <ul className={styles.links}>
@@ -56,18 +57,12 @@ export const Contact = () => {
           Download Resume
         </a>
       </div>
-      <div className={style.topArrow}>
-        <HashLink className={styles.arrow} smooth to={'#top'}>
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
-          <img src={upArrow} alt="" width="10px" />
+      {/* <div className={styles.topArrow}>
+        <HashLink smooth to={'#top'}>
+          <img src={upArrow} alt="" width="5%" />
         </HashLink>
-      </div>
+        <h3>Back To Top</h3>
+      </div> */}
     </div>
   );
 };

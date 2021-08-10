@@ -23,7 +23,7 @@ ul li {
 }
 
 ul li a:hover {
-  color: aliceblue;
+  color: cornsilk;
 }
 
 ul li a {
@@ -31,7 +31,7 @@ ul li a {
   font-size: 1.25rem;
   list-style-type: none;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  color: whitesmoke;
+  -webkit-text-stroke-color: coral;
+  color: cornsilk;
   text-decoration: none;
 }
