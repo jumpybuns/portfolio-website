@@ -3,12 +3,12 @@
   flex-direction: row;
   font-family: 'Raleway', sans-serif;
   flex-wrap: wrap;
+  justify-content: space-around;
   flex-direction: row;
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
   background-color: lightgray;
-  padding-right: 5%;
 }
 
 .links {
@@ -34,19 +34,19 @@
 }
 
 .aurora:hover {
-  color: aqua;
+  color: rgb(189, 252, 255);
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 }
 .karaoke:hover {
-  color: aqua;
+  color: rgb(189, 252, 255);
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 }
 .chatable:hover {
-  color: aqua;
+  color: rgb(189, 252, 255);
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 }
 .bloom:hover {
-  color: aqua;
+  color: rgb(189, 252, 255);
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
 }
 
@@ -78,7 +78,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5%;
+  padding: 0% 0% 5% 0%;
   height: 20%;
   width: 80%;
   font-weight: 600;

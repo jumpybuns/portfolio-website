@@ -7,6 +7,7 @@ export const TechStack = () => {
   return (
     <>
       <div id="techstack" className={styles.container}>
+        <Circles />
         <div className={styles.techStack}>
           <h1>TECH STACK</h1>
           <img src={ethan} alt="" />

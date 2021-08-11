@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './AboutMe.css';
 import { Link } from 'react-router-dom';
-import Triangle from './Triangle';
-import ethan from '../../../public/ethan.jpg';
+import profile from '../../../public/profile.jpg';
 
 export const AboutMe = () => {
   return (
     <div id="aboutme" className={styles.container}>
       <div className={styles.aboutMeBox}>
-        <h1 className={styles.aboutMe}>ABOUT ME</h1>
+        <h1>ABOUT ME</h1>
       </div>
       <div className={styles.text}>
         <h3>
@@ -23,7 +22,7 @@ export const AboutMe = () => {
           target="_blank"
           style={{ textDecoration: 'none' }}
         >
-          <img className={styles.image} alt="ethan" src={ethan} />
+          <img src={profile} alt="profile" />
         </Link>
       </div>
       <div className={styles.text2}>

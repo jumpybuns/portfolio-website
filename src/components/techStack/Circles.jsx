@@ -4,7 +4,7 @@ import styles from './Circles.css';
 const width = window.innerWidth;
 const height = window.innerHeight;
 const circleRadius = 200;
-const intialMousePosition = { x: 135, y: 250 };
+const intialMousePosition = { x: 3800, y: 500 };
 const circleRadius2 = 100;
 
 export const Circles = () => {

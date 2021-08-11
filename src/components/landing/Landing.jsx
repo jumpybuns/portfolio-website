@@ -58,9 +58,9 @@ export const Landing = () => {
             <div className={styles.hidden}>E</div>
           </div>
         </div>
-        <div className={styles.description}>
-          <p>Freelance Fullstack Developer based in Portland, OR</p>
-        </div>
+      </div>
+      <div className={styles.description}>
+        <p>Freelance Fullstack Developer based in Portland, OR</p>
       </div>
     </div>
   );
