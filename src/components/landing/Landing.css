@@ -42,11 +42,12 @@ ul li a {
 }
 .landingContainer {
   display: flex;
-  width: 100%;
+  position: relative;
+  left: 50%;
+  width: 25%;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  align-content: flex-start;
 }
 
 .nameBox {
@@ -77,11 +78,9 @@ ul li a {
 
 .description {
   display: flex;
-  flex-direction: row;
-  align-items: space-evenly;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   position: relative;
-  top: 10%;
+  justify-content: center;
 }

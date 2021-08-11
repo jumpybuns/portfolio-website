@@ -22,7 +22,7 @@ export const Circles = () => {
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseOver={handleMouseMove}
+        onMouseMove={handleMouseMove}
       >
         <circle
           className="circ"

@@ -10,7 +10,7 @@ circle {
   fill: coral;
   stroke: black;
   stroke-width: 3;
-  transition: ease-in-out 1s;
+  transition: ease-in-out 3s;
   opacity: 25%;
 }
 
