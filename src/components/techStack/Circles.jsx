@@ -4,12 +4,12 @@ import styles from './Circles.css';
 const width = window.innerWidth;
 const height = window.innerHeight;
 const circleRadius = 200;
-const intialMousePosition = { x: 1500, y: 820 };
+const intialMousePosition = { x: 135, y: 250 };
 const circleRadius2 = 100;
 
 export const Circles = () => {
   const [mousePosition, setMousePosition] = useState(intialMousePosition);
-  const handleMouseMove = useCallback(
+  const handleMouseMoved = useCallback(
     (event) => {
       const { clientX, clientY } = event;
       setMousePosition({ x: clientX, y: clientY });
@@ -24,7 +24,7 @@ export const Circles = () => {
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseClick={handleMouseMove}
+        onMouseDown={handleMouseMoved}
       >
         <circle
           className="circ"

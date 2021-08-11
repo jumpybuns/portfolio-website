@@ -1,32 +1,37 @@
-.container {
-  position: relative;
+.landingContainer {
   display: flex;
-  flex-flow: column wrap;
-  font-size: 1.5rem;
-  color: black;
-  height: 0;
-  width: 0;
-  z-index: 999;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
 }
 
-.work {
-  margin-top: 5%;
-  margin-left: 50%;
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-.words {
-  text-decoration: none;
-}
-.words a:hover {
-  color: aliceblue;
-
-  word-spacing: 10px;
-  text-decoration: none;
+ul li {
+  display: inline-flex;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  margin-left: 1%;
 }
 
-.words a {
-  color: black;
-  margin-left: 60%;
-  margin-right: -10%;
+ul li a:hover {
+  color: cornsilk;
+}
+
+ul li a {
+  list-style: none;
+  font-size: 1.25rem;
+  list-style-type: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: coral;
+  color: cornsilk;
   text-decoration: none;
 }

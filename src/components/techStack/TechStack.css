@@ -1,36 +1,56 @@
-.gridContainer {
+.container {
   display: flex;
-  flex: wrap;
-  position: relative;
-  z-index: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  border-top: 5px solid black;
+  font-family: 'Raleway', sans-serif;
+}
+.techStack {
+  padding-top: 2%;
+  font-size: 3rem;
+  height: 100%;
+  width: 50%;
 }
 
-.techStack {
-  flex: auto;
-  font-size: 5rem;
-  margin-top: 2%;
-  margin-left: 2%;
+.techStack img {
+  margin: 5% 0% 0% 5%;
+  border-radius: 100%;
+  opacity: 0%;
+  width: 50%;
+  max-width: 100%;
+  transition: 1s ease-in-out;
+  transform: rotate(-20deg);
+}
+.techStack:hover img {
+  opacity: 100%;
+  width: 70%;
+  max-width: 100%;
+  transform: rotate(0deg);
 }
 
 .techs {
-  flex: wrap;
-  margin-right: 5%;
-  margin-top: 2%;
-  font-size: 2.5rem;
-  height: 10%;
+  height: 100%;
+  width: 50%;
+  align-items: flex-end;
 }
 
-pre {
+.techs h2 {
+  padding: 5%;
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+
+.techs pre {
+  border-width: 50%;
+  font-size: 2.5rem;
   font-weight: bolder;
   font-size: 1.5rem;
+  padding-left: 10%;
+  word-spacing: 0.5em;
   border-bottom: 5px solid #1c6ea4;
   border-radius: 5px 0px 0px 40px;
-  background-color: lightgray;
-}
-
-.arrow {
-  display: flex;
-  flex: none;
+  background-color: coral;
 }

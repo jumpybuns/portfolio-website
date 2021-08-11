@@ -1,34 +1,52 @@
 .container {
-  background-color: blanchedalmond;
+  height: 100vh;
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  border-top: 5px solid black;
   border-bottom: 5px solid #000000;
+  background-color: blanchedalmond;
+  font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  box-sizing: content-box;
+  width: 100%;
 }
 
-.image {
-  height: 100vh;
-  width: 50vw;
-  -webkit-animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: image 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+.aboutMeBox {
+  box-sizing: inherit;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
 }
-
 .text {
-  margin-left: 5%;
-  margin-top: 5%;
-  font-size: 1.2rem;
-  -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  font-size: 1.5rem;
+  width: 25%;
+
+  /* -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both; */
+}
+.image {
+  box-sizing: inherit;
+  padding: 0;
+  width: 50%;
+  max-width: 100%;
+  border-radius: 50%;
+  transition: ease-in-out 1s;
 }
 
-.aboutMe {
-  font-size: 5rem;
-  flex: none;
-  margin-top: 35%;
-  margin-right: 8%;
+.image:hover {
+  transform: scale(1.1);
 }
 
-@-webkit-keyframes image {
+.text2 {
+  font-size: 1.5rem;
+  width: 35%;
+  /* -webkit-animation: text 0.75s cubic-bezier(0.6, 0, 0.9, 0.97) both;
+  animation: text 0.75s cubic-bezier(0.6, 0, 0.9, 0.97) both; */
+}
+
+/* @-webkit-keyframes image {
   100% {
     -webkit-filter: blur(0.01);
     filter: blur(0.01);
@@ -94,4 +112,4 @@
     filter: blur(4px);
     opacity: 0;
   }
-}
+} */

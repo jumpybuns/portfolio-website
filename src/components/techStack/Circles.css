@@ -1,7 +1,9 @@
 .container {
   position: absolute;
+  left: 100px;
   z-index: -1;
 }
+
 circle {
   fill: coral;
   stroke: black;

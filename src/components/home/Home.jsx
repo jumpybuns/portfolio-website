@@ -4,13 +4,14 @@ import { AboutMe } from '../aboutMe/AboutMe';
 import { Projects } from '../projects/Projects';
 import { TechStack } from '../techStack/TechStack';
 import { Contact } from '../contact/Contact';
+import styles from './Home.css';
 
 export const Home = () => {
   return (
-    <div id="top">
+    <div id="top" className={styles.container}>
       <Landing />
-      <Projects />
       <AboutMe />
+      <Projects />
       <TechStack />
       <Contact />
     </div>
