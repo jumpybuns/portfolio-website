@@ -17,10 +17,12 @@
   box-sizing: inherit;
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
+  margin: 5% 0% 0% 5%;
 }
 .text {
   font-size: 1.5rem;
   width: 25%;
+  padding-bottom: 10%;
 
   /* -webkit-animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: text 0.75s cubic-bezier(0.47, 0, 0.745, 0.715) both; */

@@ -60,6 +60,7 @@
 }
 
 .work {
+  margin: 2% 5% 0% 0%;
   font-size: 6rem;
   -webkit-animation: title 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: title 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;

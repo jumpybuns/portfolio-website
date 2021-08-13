@@ -15,7 +15,13 @@ export const Contact = () => {
         <h1>Contact Me</h1>
       </div>
       <div className={styles.hi}>
-        <h2>Say Hi!</h2>
+        <Link
+          to={{ pathname: 'https://mail.google.com/' }}
+          target="_blank"
+          style={{ textDecoration: 'none' }}
+        >
+          <h2>Say Hi!</h2>{' '}
+        </Link>
       </div>
       <ul className={styles.links}>
         <li>
