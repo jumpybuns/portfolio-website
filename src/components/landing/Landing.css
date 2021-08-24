@@ -51,29 +51,25 @@ ul li a {
 }
 
 .nameBox {
-  width: 30%;
+  height: 80%;
+  width: 80%;
   display: flex;
+  flex-direction: row;
   position: relative;
-  left: 33%;
 }
 
 .name {
+  display: flex;
+  flex-direction: row;
   font-family: inherit;
   font-family: 'Heebo', sans-serif;
   font-size: 11rem;
 }
 
 .hidden {
-  font-size: 2rem;
-  transform: rotate(90deg);
-  width: 0;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-.nameBox:hover .hidden {
-  width: 100%;
-  opacity: 1;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
 }
 
 .description {
@@ -82,5 +78,6 @@ ul li a {
   font-weight: 900;
   font-size: 1.5rem;
   position: relative;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 5%;
 }
