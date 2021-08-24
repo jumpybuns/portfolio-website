@@ -60,7 +60,7 @@ export const Landing = () => {
         </div>
       </div>
       <div className={styles.description}>
-        <p>Freelance Fullstack Developer based in Portland, OR</p>
+        <p>Fullstack Developer based in Portland, OR</p>
       </div>
     </div>
   );

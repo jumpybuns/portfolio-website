@@ -1,0 +1,33 @@
+.sadbox {
+  position: absolute;
+  left: 200px;
+  top: 78px;
+  height: 500px;
+  width: 850px;
+  border-radius: 15px;
+  z-index: 999;
+}
+
+.shadow {
+  position: absolute;
+  -webkit-filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.7));
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

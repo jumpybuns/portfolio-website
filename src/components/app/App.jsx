@@ -11,6 +11,7 @@ import { TechStack } from '../techStack/TechStack';
 import { Contact } from '../contact/Contact';
 import { Projects } from '../projects/Projects';
 import { Home } from '../home/Home';
+import sadbox from '../../sadbox/sadbox';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route exact path="/techstack" component={TechStack} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/sadbox" component={sadbox} />
           <Route render={() => <Redirect to="/" />} />
         </Switch>
       </Router>
